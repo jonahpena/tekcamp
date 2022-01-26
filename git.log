@@ -1,0 +1,42 @@
+commit 23468b8bb97d6e1f85670b71ce1b38a6d2126897
+Author: Jonah Pena <jonahrpena@gmail.com>
+Date:   Wed Jan 26 13:30:23 2022 -0600
+
+    insert resetting comitted changes after the h1 tag
+
+commit 3060db22d448699a759a8a81c91858d7f2572fbb
+Author: Jonah Pena <jonahrpena@gmail.com>
+Date:   Wed Jan 26 13:16:08 2022 -0600
+
+    added updated-h1 and h2-tag with changes
+
+commit b5ae0086016c1aa18dadd1513ce26d7fc24f736d
+Merge: 3c1cd2f db11430
+Author: Jonah Pena <jonahrpena@gmail.com>
+Date:   Wed Jan 26 13:08:02 2022 -0600
+
+    Merge branch 'updated-title' into develop
+
+commit db11430e5675b6caf61e1f8114ddcec9ef9646e0
+Author: Jonah Pena <jonahrpena@gmail.com>
+Date:   Wed Jan 26 13:07:29 2022 -0600
+
+    made updated html change in updated-title branch
+
+commit 3c1cd2f9488794b870ed01dcbdc012f1fc47e405
+Author: Jonah Pena <jonahrpena@gmail.com>
+Date:   Wed Jan 26 13:04:28 2022 -0600
+
+    commit latest changes to new-body branch
+
+commit dc645fbe590128fc156f03578bb798de779abfc9
+Author: Jonah Pena <jonahrpena@gmail.com>
+Date:   Wed Jan 26 12:58:39 2022 -0600
+
+    comit changes to new-html
+
+commit 2d4335a86d7865e3a07fb2b8ae738510599f0a1a
+Author: Jonah <47818366+jonahpena@users.noreply.github.com>
+Date:   Wed Jan 26 12:50:04 2022 -0600
+
+    Initial commit
