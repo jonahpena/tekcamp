@@ -1,20 +1,51 @@
-* {
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Lexend Deca', sans-serif;
-}
-
+/* Margins and Spacing */
 body {
     display: flex;
+
 }
 
+/* Background Color Styling */
 #sedancard {
     background-color: hsl(31, 77%, 52%);
 }
 
 #suvcard {
-    background-color: hsl(184, 100%, 22%)
+    background-color: hsl(184, 100%, 22%);
 }
 
 #luxurycard {
-    background-color: hsl(179, 100%, 13%)
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Section Styling */
+.card {
+    padding: 3em;
+    margin: 20px auto;
+    width: 800px;
+    text-align: left;
+}
+/* Paragraph Styling */
+p {
+
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    Font size: 15px
+
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    Font size: 15px
+}
+
+/* Button Styling */
+button {
+    color: hsl(0, 0%, 95%);
+    background-color: white;
+
+}
+button:hover {
+    background-color: transparent;
 }
