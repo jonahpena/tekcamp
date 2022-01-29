@@ -1,0 +1,20 @@
+* {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+#sedancard {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suvcard {
+    background-color: hsl(184, 100%, 22%)
+}
+
+#luxurycard {
+    background-color: hsl(179, 100%, 13%)
+}
