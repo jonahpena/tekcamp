@@ -67,7 +67,25 @@ button {
     color: hsl(31, 77%, 52%);
 }
 
-button:hover {
+#suvbutton {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxurybutton {
+    color: hsl(179, 100%, 13%);
+}
+
+#sedanbutton:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#suvbutton:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#luxurybutton:hover {
     background-color: transparent;
     color: white;
 }
