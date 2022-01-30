@@ -1,8 +1,3 @@
-/* Margins and Spacing */
-body {
-
-}
-
 /* Background Color Styling */
 #sedancard {
     background-color: hsl(31, 77%, 52%);
@@ -22,7 +17,6 @@ body {
 
 /* Flexbox */
 section {
-    background-color: tomato;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,9 +28,8 @@ section {
 /* Section Styling */
 .card {
     padding: 3em;
-    margin: 5em;
     width: 15em;
-    height: 30em;
+    height: 28em;
 
 }
 
@@ -46,7 +39,9 @@ p {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
-    
+    line-height: 1.8em;
+    width: 14em;
+    margin-bottom: 7em;
 }
 
 /* Title Styling */
@@ -58,14 +53,20 @@ h1 {
 
 /* Button Styling */
 button {
-    margin-top: 7em;
+
     border: 3px solid white;
     font-size: 15px;
     border-radius: 8em;
     padding: .8em;
     font-family: 'Lexend Deca', sans-serif;
     width: 10em;
+    height: 3.4em;
 }
+
+#sedanbutton {
+    color: hsl(31, 77%, 52%);
+}
+
 button:hover {
     background-color: transparent;
     color: white;
