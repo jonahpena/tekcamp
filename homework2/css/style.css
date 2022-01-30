@@ -63,29 +63,7 @@ button {
     height: 3.4em;
 }
 
-#sedanbutton {
-    color: hsl(31, 77%, 52%);
-}
-
-#suvbutton {
-    color: hsl(184, 100%, 22%);
-}
-
-#luxurybutton {
-    color: hsl(179, 100%, 13%);
-}
-
-#sedanbutton:hover {
+.customButton:hover {
     background-color: transparent;
-    color: white;
-}
-
-#suvbutton:hover {
-    background-color: transparent;
-    color: white;
-}
-
-#luxurybutton:hover {
-    background-color: transparent;
-    color: white;
+    color: white !important;
 }
