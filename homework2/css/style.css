@@ -1,8 +1,8 @@
 /* Setting Color Variables */
 :root {
---sedan-color:  hsl(31, 77%, 52%);
---suv-color: hsl(184, 100%, 22%);
---luxury-color:  hsl(179, 100%, 13%);
+--sedan-color: #E28726;
+--suv-color: #006870;
+--luxury-color: #004241;
 }
 
 /* Flexbox */
@@ -10,6 +10,7 @@ section {
     display: flex;
     width: 125em;
     height: 60em;
+    box-sizing: border-box;
 }
 
 /* Background Color Styling */
@@ -36,7 +37,7 @@ section {
 /* Paragraph Styling */
 p {
     text-align: left;
-    color: hsla(0, 0%, 100%, 0.75);
+    color: #FFFFFF;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     line-height: 1.8em;
@@ -45,7 +46,7 @@ p {
 /* Title Styling */
 h1 {
     font-family: 'Big Shoulders Display', cursive;
-    color: hsl(0, 0%, 95%);
+    color: #F2F2F2;
     font-size: 2.3em;
 }
 
@@ -58,6 +59,7 @@ button {
     font-family: 'Lexend Deca', sans-serif;
     width: 10em;
     height: 3.4em;
+    background-color: hsl(0, 0%, 95%);
 }
 .sedanButton {
     color:var(--sedan-color);
@@ -73,7 +75,7 @@ button {
 
 button:hover {
     background-color: transparent;
-    color: white !important;
+    color: hsl(0, 0%, 95%) !important;
 }
 
 /* Responsive Smartphone */
@@ -105,7 +107,7 @@ body {
 }
 
 /* Responsive Desktop */
-@media(min-width: 1201px) {
+@media(min-width: 501px) {
 section {
     flex-direction:row ;
     align-items: center;
