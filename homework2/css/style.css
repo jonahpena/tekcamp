@@ -62,8 +62,28 @@ button {
     width: 10em;
     height: 3.4em;
 }
+.sedanButton {
+    color:hsl(31, 77%, 52%);
+}
 
-.customButton:hover {
+.suvButton {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxuryButton {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
     background-color: transparent;
     color: white !important;
+}
+
+/* Smartphones */
+@media(max-width: 500px) {
+
+body {
+    background-color: tomato;
+}
+
 }
