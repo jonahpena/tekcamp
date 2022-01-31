@@ -18,6 +18,11 @@ https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things
 
 HOMEWORK 2
 
-https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+1. https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+-Used this resource to help myself set media quries. I also used udemy section 5 #43.
 
-When it was time to set my media queries, I used this resource to help myself come up with "@media(min-width: 1201px) {" and "@media only screen and (max-width:500px){". I also used udemy section 5 #43.
+2. https://css-tricks.com/using-svg/
+-Used this resource to add svg into CSS.
+
+3. https://www.rapidtables.com/convert/color/index.html#:~:text=Hex%20%2F%20RGB%20%2F%20HSV%20%2F%20HSL%3A%20,%20%20%28120%C2%B0%2C100%25%2C50%25%29%20%2012%20more%20rows%20
+-Used this resource to change HSL values into hex values.
