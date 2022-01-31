@@ -1,0 +1,129 @@
+/* Setting Color Variables */
+:root {
+--sedan-color:  hsl(31, 77%, 52%);
+--suv-color: hsl(184, 100%, 22%);
+--luxury-color:  hsl(179, 100%, 13%);
+}
+
+/* Flexbox */
+section {
+    display: flex;
+    width: 125em;
+    height: 60em;
+}
+
+/* Background Color Styling */
+#sedanCard {
+    background-color: var(--sedan-color);
+}
+
+#suvCard {
+    background-color: var(--suv-color);
+}
+
+#luxuryCard {
+    background-color: var(--luxury-color);
+
+}
+
+/* Card Styling */
+.card {
+    padding: 3em;
+    width: 15em;
+    height: 28em;
+}
+
+/* Paragraph Styling */
+p {
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.8em;
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.3em;
+}
+
+/* Button Styling */
+button {
+    border: 3px solid white;
+    font-size: 15px;
+    border-radius: 8em;
+    padding: .8em;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 10em;
+    height: 3.4em;
+}
+.sedanButton {
+    color:var(--sedan-color);
+}
+
+.suvButton {
+    color: var(--suv-color);
+}
+
+.luxuryButton {
+    color: var(--luxury-color);
+}
+
+button:hover {
+    background-color: transparent;
+    color: white !important;
+}
+
+/* Responsive Smartphone */
+@media only screen and (max-width:500px){
+section {
+    flex-direction:column ;
+}
+
+p {
+    margin-bottom: 2em;
+    width: 15.5em;
+}
+
+#sedanCard {
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+}
+
+#luxuryCard {
+    border-bottom-left-radius: .4em;
+    border-bottom-right-radius: .4em;
+}
+
+body {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 6em;
+}
+}
+
+/* Responsive Desktop */
+@media(min-width: 1201px) {
+section {
+    flex-direction:row ;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-bottom: 7em;
+    width: 14em;
+}
+
+#sedanCard {
+    border-top-left-radius: .4em;
+    border-bottom-left-radius: .4em;
+}
+
+#luxuryCard {
+    border-top-right-radius: .4em;
+    border-bottom-right-radius: .4em;
+}
+}
