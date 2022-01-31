@@ -1,14 +1,6 @@
-# tekcamp
+1. I would say I ran into challenge initiall with precedence. I was having some trouble with a button working and realized that I needed to move a few things around.
 
-I'm pretty sure I understand this after the 3rd attempt. 
+2. I also struggled by making the mistake of looking at the desing and getting to work wthout looking at some of the specific requirements first. If I had looked at the requirements first I may not have had to make changes after the code was working.
 
-Below are the resources I used if I ever pulled information from outside the resources provided:
+3. I ran into some challenges with the media queries but was able to fix them but playing with different setting till I found what worked best for our project.
 
-https://github.com/git-guides/git-pull
--I used this to learn how I take a local branch and update that with information that is currently 
-on a branch on the remote repositiory. 
--I read all sections up to the section "keep the master up to date"
-
-https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things
--I used this resource to learn how to unstage multiple files as well as a single file that had been staged
--I read the first 2 sections "undoing things" and "unstaging a staged file"
