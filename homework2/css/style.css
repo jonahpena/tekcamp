@@ -77,7 +77,6 @@ button:hover {
 }
 
 /* Responsive Smartphone */
-
 @media only screen and (max-width:500px){
 section {
     flex-direction:column ;
@@ -102,7 +101,6 @@ body {
     margin-left: 1em;
     margin-right: 1em;
     margin-top: 6em;
-
 }
 }
 
