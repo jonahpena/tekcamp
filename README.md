@@ -1,6 +1,6 @@
 # tekcamp
 
-I'm pretty sure I understand this after the 3rd attempt. 
+HOMEWORK 1
 
 Below are the resources I used if I ever pulled information from outside the resources provided:
 
