@@ -1,3 +1,10 @@
+/* Setting Color Variables */
+:root {
+--sedan-color:  hsl(31, 77%, 52%);
+--suv-color: hsl(184, 100%, 22%);
+--luxury-color:  hsl(179, 100%, 13%);
+}
+
 /* Flexbox */
 section {
     display: flex;
@@ -7,15 +14,15 @@ section {
 
 /* Background Color Styling */
 #sedanCard {
-    background-color: hsl(31, 77%, 52%);
+    background-color: var(--sedan-color);
 }
 
 #suvCard {
-    background-color: hsl(184, 100%, 22%);
+    background-color: var(--suv-color);
 }
 
 #luxuryCard {
-    background-color: hsl(179, 100%, 13%);
+    background-color: var(--luxury-color);
 
 }
 
@@ -53,15 +60,15 @@ button {
     height: 3.4em;
 }
 .sedanButton {
-    color:hsl(31, 77%, 52%);
+    color:var(--sedan-color);
 }
 
 .suvButton {
-    color: hsl(184, 100%, 22%);
+    color: var(--suv-color);
 }
 
 .luxuryButton {
-    color: hsl(179, 100%, 13%);
+    color: var(--luxury-color);
 }
 
 button:hover {
@@ -69,7 +76,7 @@ button:hover {
     color: white !important;
 }
 
-/* Smartphone */
+/* Responsive Smartphone */
 
 @media only screen and (max-width:500px){
 section {
@@ -99,7 +106,7 @@ body {
 }
 }
 
-/* Desktop */
+/* Responsive Desktop */
 @media(min-width: 1201px) {
 section {
     flex-direction:row ;
