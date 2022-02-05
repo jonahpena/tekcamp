@@ -44,6 +44,7 @@ function emailErrorLogic(e){
     var mailFormat = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
 
     if (email.value === '' || email.value == null || email.value === "email@example/com") {
+        emailError.innerHTML = "Email cannot be empty";
         showEmailError()
         }
         hideEmailError()
@@ -53,14 +54,13 @@ function emailErrorLogic(e){
         emailError.innerHTML = "Email cannot be empty";
         }
  */
-        else {
+    else {
     emailError.innerHTML = "Looks like this is not an email";
     email.value = "email@example/com";
     email.style.color = "#ff7a7a";
     email.style.fontFamily = "Poppins"
     email.style.fontSize = "22px";
     showEmailError();
-    email.addEventListener('mouseover', clearEmailField());
     }
 }
 
