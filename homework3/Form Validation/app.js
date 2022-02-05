@@ -43,12 +43,17 @@ function lastErrorLogic(e){
 function emailErrorLogic(e){
     var mailFormat = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
 
-    if (email.value === '' || email.value == null) {
+    if (email.value === '' || email.value == null || email.value === "email@example/com") {
         showEmailError()
         }
         hideEmailError()
     if (email.value.match(mailFormat));
-    else {
+
+/*     if (email.value === '' || email.value == null) {
+        emailError.innerHTML = "Email cannot be empty";
+        }
+ */
+        else {
     emailError.innerHTML = "Looks like this is not an email";
     email.value = "email@example/com";
     email.style.color = "#ff7a7a";
@@ -57,25 +62,24 @@ function emailErrorLogic(e){
     showEmailError();
     email.addEventListener('mouseover', clearEmailField());
     }
-
 }
 
 // Error logic for password field
 function passwordErrorLogic(e){
     if (password.value === '' || password.value == null) {
     showPasswordError();
-        }
-        hidePasswordError()
+    }
+    hidePasswordError()
 }
 
 // Show Error Functions
 function showFirstNameError() {
-        hiddenFirst.style = "visibility: visible"
-        firstNameError.style = "visibility: visible"
-        firstName.style.borderColor = "#ff7a7a";
-        firstName.style.borderWidth = "3px";
-        firstName.placeholder = '';
-        e.preventDefault();
+    hiddenFirst.style = "visibility: visible"
+    firstNameError.style = "visibility: visible"
+    firstName.style.borderColor = "#ff7a7a";
+    firstName.style.borderWidth = "3px";
+    firstName.placeholder = '';
+    e.preventDefault();
 }
 function showLastNameError() {
     hiddenLast.style = "visibility: visible"
