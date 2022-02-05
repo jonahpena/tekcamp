@@ -41,18 +41,23 @@ function lastErrorLogic(e){
 
 // Error logic for email Field
 function emailErrorLogic(e){
-    var mailformat = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+    var mailFormat = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
 
     if (email.value === '' || email.value == null) {
         showEmailError()
         }
         hideEmailError()
-    if (email.value.match(mailformat));
+    if (email.value.match(mailFormat));
     else {
     emailError.innerHTML = "Looks like this is not an email";
+    email.value = "email@example/com";
+    email.style.color = "#ff7a7a";
+    email.style.fontFamily = "Poppins"
+    email.style.fontSize = "22px";
     showEmailError();
+    email.addEventListener('mouseover', clearEmailField());
     }
-    hideEmailError()
+
 }
 
 // Error logic for password field
@@ -67,21 +72,33 @@ function passwordErrorLogic(e){
 function showFirstNameError() {
         hiddenFirst.style = "visibility: visible"
         firstNameError.style = "visibility: visible"
+        firstName.style.borderColor = "#ff7a7a";
+        firstName.style.borderWidth = "3px";
+        firstName.placeholder = '';
         e.preventDefault();
 }
 function showLastNameError() {
     hiddenLast.style = "visibility: visible"
     lastNameError.style = "visibility: visible"
+    lastName.style.borderColor = "#ff7a7a";
+    lastName.style.borderWidth = "3px";
+    lastName.placeholder = '';
     e.preventDefault();
 }
 function showEmailError() {
     hiddenEmail.style = "visibility: visible"
     emailError.style = "visibility: visible"
+    email.style.borderColor = "#ff7a7a";
+    email.style.borderWidth = "3px";
+    email.placeholder = '';
     e.preventDefault();
 }
 function showPasswordError() {
     hiddenPassword.style = "visibility: visible"
     passwordError.style = "visibility: visible"
+    password.style.borderColor = "#ff7a7a";
+    password.style.borderWidth = "3px";
+    password.placeholder = '';
     e.preventDefault();
 }
 
@@ -89,16 +106,33 @@ function showPasswordError() {
 function hideFirstError() {
     hiddenFirst.style = "visibility: hidden"
     firstNameError.style = "visibility: hidden"
+    firstName.style.borderColor = "#b9b6d3";
+    firstName.style.borderWidth = "1px";
 }
 function hideLastError() {
     hiddenLast.style = "visibility: hidden"
     lastNameError.style = "visibility: hidden"
+    lastName.style.borderColor = "#b9b6d3";
+    lastName.style.borderWidth = "1px";
 }
 function hideEmailError() {
     hiddenEmail.style = "visibility: hidden"
     emailError.style = "visibility: hidden"
+    email.style.borderColor = "#b9b6d3";
+    email.style.borderWidth = "1px";
 }
 function hidePasswordError() {
     hiddenPassword.style = "visibility: hidden"
     passwordError.style = "visibility: hidden"
+    password.style.borderColor = "#b9b6d3";
+    password.style.borderWidth = "1px";
+}
+
+// Clear Field when clicked
+function clearEmailField(){
+    email.value = '';
+    email.style.color = "black"
+    email.style.fontFamily = "tahoma"
+    email.style.fontWeight = "600"
+    email.style.fontSize = "1.25vw"
 }

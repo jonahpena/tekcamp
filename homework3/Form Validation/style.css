@@ -41,6 +41,7 @@ header{
     margin: 0vw 0vw 18vw 0vw;
 }
 
+
 #header-text{
     /* border:red solid 1px; */
     margin:0vw 4vw 6vw 4vw;
@@ -188,8 +189,14 @@ form i{
   }
 
   .error-text {
-    font-size: 1vw;
     margin: 0.2vh 0vh 1.5vh 0vh;
+    /* Changing P tags to italics*/
+    font-style: italic;
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 500;
+
+}
   }
 
   .input-error{
@@ -209,4 +216,4 @@ form i{
       font-size: .9vw;
   }
 
-}
+
