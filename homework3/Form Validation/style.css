@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global CSS Variables */
+:root{
+    --primary1: #ff7a7a;
+    --primary2: #38cc8c;
+    --accent: #6055a5;
+    --nuetral1: #3e3c49;
+    --nuetral2: #b9b6d3;
+    --main-font: 'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    width: 100vw;
+    background:var(--primary1) url("images/bg-intro-mobile.png");
+    font-family: var(--main-font);
+    font-size: 4.2vw;
+    font-weight: 500;
+    color: #ffffff;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+}
+
+.main-flex{
+    height:100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    margin: 11.5vh 8vw;
+}
+
+header{
+    margin: 0vw 0vw 18vw 0vw;
+}
+
+
+#header-text{
+    /* border:red solid 1px; */
+    margin:0vw 4vw 6vw 4vw;
+    font-size: 7vw;
+    font-weight: 700;
+}
+
+#trial-details{
+    background-color: var(--accent);
+    padding:2.6vh 12vw;
+    margin: 0vw 0vw 5vw 0vw;
+    border-radius:3vw;
+    box-shadow:0px 7px #3e3c4952;
+    font-weight: 400;
+}
+
+#disclaimer{
+    margin: 2vh 2.5vw 1vh 2.5vw;
+    color: var(--nuetral2);
+    font-size: 10px;
+  }
+
+form{
+    background-color: #ffffff;
+    padding: 2vh 5vw;
+    margin: 2.5vh 0vw;
+    border-radius:3vw;
+    box-shadow:0px 7px #3e3c4952
+}
+
+input {
+    width: 100%;
+    margin: 0.5vh 0vw 0vw 0vw;
+    padding: 1.75vh 2vw;
+    border:solid var(--nuetral2) 1px;
+    border-radius:1vw;
+    font-weight: 600;
+    font-size: 3vw;
+    font-family: var(--main-font);
+}
+
+input.invalid-email{
+    color:var(--primary1);
+    border-color: var(--primary1);
+}
+
+input.error{
+    border-color: var(--primary1);
+}
+
+.error-text{
+    font-size: 2vw;
+    margin: .5vh 0vh;
+    text-align: end;
+    color:var(--primary1);
+    font-style: italic;
+}
+
+form i{
+    position:absolute;
+    right:75px;
+    padding-top: 4px;
+}
+
+.input-error{
+    color:var(--primary1);
+    margin: 2.6vh 0vw 0vw 65vw;
+}
+
+#form-submit{
+    width: 100%;
+    border: none;
+    background-color: var(--primary2);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 4vw;
+    padding: 2.25vh 0vw;
+    border-radius:1.5vw;
+    margin: .5vh 0vw;
+    box-shadow:0px 5px #33b87e
+}
+
+#form-submit:active{
+    background-color: #5dfab6;
+    box-shadow:0px 5px var(--primary2);
+}
+
+#disclaimer{
+    margin: 2vh 2.5vw 1vh 2.5vw;
+    color: var(--nuetral2);
+    font-size: 3vw;
+}
+
+#terms-services{
+    color: var(--primary1)
+}
+#hiddenFirst{
+  font-size: px;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    body {
+    background: var(--primary1) url("images/bg-intro-desktop.png");
+    font-size: 1.25vw;
+    text-align: left;
+  }
+
+  form i{
+    position:absolute;
+    left:1040px;
+    padding-top: 0px;
+    size: 5em;
+  }
+  .input-error{
+    margin: 2.3vh 0vw 0vw 13vw;
+    font-size: 30px;
+
+  }
+  .main-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 8vw;
+  }
+
+  header {
+    width: 50%;
+    margin: 0vw 0vw 0vw 0vw;
+  }
+
+  #form-submit{
+    font-size: 18px;
+    border-radius:.3em;
+    font-family: var(--main-font);
+  }
+
+  #disclaimer{
+  margin: 2vh 2.5vw 1vh 2.5vw;
+  color: var(--nuetral2);
+  font-size: .9vw;
+  }
+
+  #header-text {
+    margin: 0vw 0vw 1.5vw 0vw;
+    font-size: 4vw;
+    font-weight: 700;
+  }
+
+  #secondary-flex {
+    width: 50%;
+    height: 100%;
+    margin: 0vh 0vw 0vw 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #trial-details {
+    width: 100%;
+    padding: 2vh 0vw;
+    margin: 0vw 0vw 0vw 0vw;
+    border-radius: 1vw;
+    text-align: center;
+  }
+
+  form {
+    width:100%;
+    padding: 4.5vh 3vw;
+    margin: 2.5vh 0vw;
+    border-radius: 1vw;
+  }
+
+  input {
+    margin: 0.5vh 0vw 0vw 0vw;
+    border-radius: .3vw;
+    font-size: 15px;
+  }
+
+  .error-text {
+    margin: 0.2vh 0vh 1.5vh 0vh;
+    /* Changing P tags to italics*/
+    font-style: italic;
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+form i{
+  position:absolute;
+}
+}
+
+
+
+/* .input-error{
+  margin: 2.8vh 0vw 0vw 32vw;
+  font-size:28px;
+} */
