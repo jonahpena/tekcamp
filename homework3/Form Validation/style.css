@@ -58,6 +58,12 @@ header{
     font-weight: 400;
 }
 
+#disclaimer{
+    margin: 2vh 2.5vw 1vh 2.5vw;
+    color: var(--nuetral2);
+    font-size: 10px;
+  }
+
 form{
     background-color: #ffffff;
     padding: 2vh 5vw;
@@ -94,6 +100,9 @@ input.error{
 
 form i{
     position:absolute;
+    right:75px;
+    padding-top: 8px;
+
 }
 
 .input-error{
@@ -150,6 +159,18 @@ form i{
     margin: 0vw 0vw 0vw 0vw;
   }
 
+  #form-submit{
+    font-size: 14px;
+    border-radius:.3em;
+    font-family: var(--main-font);
+  }
+
+    #disclaimer{
+    margin: 2vh 2.5vw 1vh 2.5vw;
+    color: var(--nuetral2);
+    font-size: .9vw;
+    }
+
   #header-text {
     margin: 0vw 0vw 1.5vw 0vw;
     font-size: 4vw;
@@ -197,7 +218,13 @@ form i{
     font-weight: 500;
 
 }
+
+
+
   }
+
+
+
 
   .input-error{
     margin: 2.3vh 0vw 0vw 32vw;
@@ -208,12 +235,6 @@ form i{
       font-size: 1.5vw;
       padding: 2.25vh 0vw;
       border-radius:.3vw;
-  }
-
-  #disclaimer{
-      margin: 2vh 2.5vw 1vh 2.5vw;
-      color: var(--nuetral2);
-      font-size: .9vw;
   }
 
 

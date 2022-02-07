@@ -148,7 +148,7 @@ function clearEmailField(){
     email.style.color = "black"
     email.style.fontFamily = "tahoma"
     email.style.fontWeight = "600"
-    email.style.fontSize = "1.25vw"
+    email.style.fontSize = "18px"
 }
 }
 
