@@ -26,3 +26,14 @@ HOMEWORK 2
 
 3. https://www.rapidtables.com/convert/color/index.html#:~:text=Hex%20%2F%20RGB%20%2F%20HSV%20%2F%20HSL%3A%20,%20%20%28120%C2%B0%2C100%25%2C50%25%29%20%2012%20more%20rows%20
 -Used this resource to change HSL values into hex values.
+
+HOMEWORK 3
+
+1. https://stackoverflow.com/questions/39149846/why-am-i-seeing-a-404-not-found-error-failed-to-load-favicon-ico-when-not-usin
+-Was running into an error with JS and was able to find a solution by pasting "<link rel="shortcut icon" href="#">" into my header.
+
+2. https://stackoverflow.com/questions/14837466/clearing-a-text-field-on-button-click/14837552
+-Needed to clear the input field on click. Tried with an event listener and had trouble so I googled a solution and found the idea to call my function through HTML inline.
+
+3. https://www.w3resource.com/javascript/form/email-validation.php
+-Used line of code: "var mailformat = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;" to help validate email address.

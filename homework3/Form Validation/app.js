@@ -132,11 +132,26 @@ function hidePasswordError() {
     password.style.borderWidth = "1px";
 }
 
+/* let emailText = email.value
+
+function clearChecker(emailText, true){
+    if(emailText !== "email@example/com"){
+    }
+    clearEmailField();
+}
+
+ */
 // Clear Field when clicked
 function clearEmailField(){
+    if(email.value === "email@example/com") {
     email.value = '';
     email.style.color = "black"
     email.style.fontFamily = "tahoma"
     email.style.fontWeight = "600"
     email.style.fontSize = "1.25vw"
 }
+}
+
+// Notes
+// error text seems more italisized than the design - check sizing w TA
+// left margin between example and the left side of the text input are closer in the design. attempt to fix or bring up w TA first.
