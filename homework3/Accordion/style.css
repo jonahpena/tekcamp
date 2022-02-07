@@ -93,7 +93,7 @@ body{
 .answer{
     padding-top: 2vh;
     color: var(--neutral-text-dark);
-    display: none;
+    /* display: none; */
 }
 
 .arrow-icon{
@@ -170,28 +170,32 @@ body{
         color: var(--neutral-text-darkest)
     }
 }
+
 /* Gives mouse cursor when hovering question */
 .accordion .faq-item .question {
     cursor: pointer;
 
 }
+/* Changes question font to bold when clicked */
 .accordion .faq-item.active .question {
     cursor: pointer;
     font-weight: 600;
 }
-/* Gives mouse cursor when hovering question */
+/* Set answer to be hidden */
 .accordion .faq-item .answer {
     display: none;
     max-height:'';
     overflow: hidden;
+    transition: 2s;
 
 }
+/* Display Answer */
 .accordion .faq-item.active .answer {
     display: block;
     overflow: auto;
     transition: 2s;
-    max-height:'81px';
 }
+/* Rotate arrow icon */
 .accordion .faq-item.active .question img {
     rotate: 180deg;
 }

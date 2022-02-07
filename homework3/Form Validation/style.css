@@ -155,11 +155,12 @@ form i{
     left:1040px;
     padding-top: 0px;
     size: 5em;
-}
-.input-error{
-  margin: 2.3vh 0vw 0vw 32vw;
-  font-size: 30px;
-}
+  }
+  .input-error{
+    margin: 2.3vh 0vw 0vw 13vw;
+    font-size: 30px;
+
+  }
   .main-flex {
     display: flex;
     flex-direction: row;
@@ -179,11 +180,11 @@ form i{
     font-family: var(--main-font);
   }
 
-    #disclaimer{
-    margin: 2vh 2.5vw 1vh 2.5vw;
-    color: var(--nuetral2);
-    font-size: .9vw;
-    }
+  #disclaimer{
+  margin: 2vh 2.5vw 1vh 2.5vw;
+  color: var(--nuetral2);
+  font-size: .9vw;
+  }
 
   #header-text {
     margin: 0vw 0vw 1.5vw 0vw;
@@ -219,7 +220,7 @@ form i{
   input {
     margin: 0.5vh 0vw 0vw 0vw;
     border-radius: .3vw;
-    font-size: .8vw;
+    font-size: 15px;
   }
 
   .error-text {
@@ -235,9 +236,7 @@ form i{
 form i{
   position:absolute;
 }
-
-
-  }
+}
 
 
 

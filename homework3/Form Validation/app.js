@@ -45,9 +45,9 @@ function emailErrorLogic(e){
 
     if (email.value === '' || email.value == null || email.value === "email@example/com") {
         emailError.innerHTML = "Email cannot be empty";
-        showEmailError()
+        showEmailError();
         }
-        hideEmailError()
+        hideEmailError();
     if (email.value.match(mailFormat));
 
 /*     if (email.value === '' || email.value == null) {
@@ -68,7 +68,7 @@ function passwordErrorLogic(e){
     if (password.value === '' || password.value == null) {
     showPasswordError();
     }
-    hidePasswordError()
+    hidePasswordError();
 }
 
 // Show Error Functions
