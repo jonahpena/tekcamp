@@ -72,14 +72,15 @@ form{
     box-shadow:0px 7px #3e3c4952
 }
 
-input{
+input {
     width: 100%;
     margin: 0.5vh 0vw 0vw 0vw;
-    padding: 1.75vh 4vw;
+    padding: 1.75vh 2vw;
     border:solid var(--nuetral2) 1px;
     border-radius:1vw;
     font-weight: 600;
-    font-size: 4.2vw;
+    font-size: 3vw;
+    font-family: var(--main-font);
 }
 
 input.invalid-email{
@@ -96,13 +97,13 @@ input.error{
     margin: .5vh 0vh;
     text-align: end;
     color:var(--primary1);
+    font-style: italic;
 }
 
 form i{
     position:absolute;
     right:75px;
-    padding-top: 8px;
-
+    padding-top: 4px;
 }
 
 .input-error{
@@ -137,6 +138,9 @@ form i{
 #terms-services{
     color: var(--primary1)
 }
+#hiddenFirst{
+  font-size: px;
+}
 
 @media only screen and (min-width: 1440px) {
 
@@ -146,6 +150,16 @@ form i{
     text-align: left;
   }
 
+  form i{
+    position:absolute;
+    left:1040px;
+    padding-top: 0px;
+    size: 5em;
+}
+.input-error{
+  margin: 2.3vh 0vw 0vw 32vw;
+  font-size: 30px;
+}
   .main-flex {
     display: flex;
     flex-direction: row;
@@ -160,7 +174,7 @@ form i{
   }
 
   #form-submit{
-    font-size: 14px;
+    font-size: 18px;
     border-radius:.3em;
     font-family: var(--main-font);
   }
@@ -204,9 +218,8 @@ form i{
 
   input {
     margin: 0.5vh 0vw 0vw 0vw;
-    padding: 2vh 3vw;
     border-radius: .3vw;
-    font-size: 1.25vw;
+    font-size: .8vw;
   }
 
   .error-text {
@@ -214,27 +227,21 @@ form i{
     /* Changing P tags to italics*/
     font-style: italic;
     font-family: var(--main-font);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
 
 }
 
-
-
-  }
-
-
-
-
-  .input-error{
-    margin: 2.3vh 0vw 0vw 32vw;
-    font-size:2vw;
+form i{
+  position:absolute;
 }
 
-  #form-submit{
-      font-size: 1.5vw;
-      padding: 2.25vh 0vw;
-      border-radius:.3vw;
+
   }
 
 
+
+/* .input-error{
+  margin: 2.8vh 0vw 0vw 32vw;
+  font-size:28px;
+} */

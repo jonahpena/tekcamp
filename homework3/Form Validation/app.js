@@ -59,7 +59,6 @@ function emailErrorLogic(e){
     email.value = "email@example/com";
     email.style.color = "#ff7a7a";
     email.style.fontFamily = "Poppins"
-    email.style.fontSize = "22px";
     showEmailError();
     }
 }
@@ -146,9 +145,7 @@ function clearEmailField(){
     if(email.value === "email@example/com") {
     email.value = '';
     email.style.color = "black"
-    email.style.fontFamily = "tahoma"
     email.style.fontWeight = "600"
-    email.style.fontSize = "18px"
 }
 }
 

@@ -173,30 +173,26 @@ body{
 /* Gives mouse cursor when hovering question */
 .accordion .faq-item .question {
     cursor: pointer;
-    max-height: 80px;
- }
+
+}
 .accordion .faq-item.active .question {
     cursor: pointer;
     font-weight: 600;
-
-    transition-property: max-height;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;    
-
 }
 /* Gives mouse cursor when hovering question */
 .accordion .faq-item .answer {
-    overflow-y: auto;
-    display: hidden;
-    }
-.accordion .faq-item.active .answer {
-    transition-timing-function: ease-in-out;
-    transition: 2s;
-    display:block;
-    overflow: auto;
+    display: none;
+    max-height:'';
+    overflow: hidden;
 
+}
+.accordion .faq-item.active .answer {
+    display: block;
+    overflow: auto;
+    transition: 2s;
+    max-height:'81px';
 }
 .accordion .faq-item.active .question img {
     rotate: 180deg;
 }
+
