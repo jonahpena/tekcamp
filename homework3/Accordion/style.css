@@ -186,14 +186,11 @@ body{
     display: none;
     max-height:'';
     overflow: hidden;
-    transition: 2s;
-
 }
 /* Display Answer */
 .accordion .faq-item.active .answer {
     display: block;
     overflow: auto;
-    transition: 2s;
 }
 /* Rotate arrow icon */
 .accordion .faq-item.active .question img {
