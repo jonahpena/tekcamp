@@ -1,6 +1,8 @@
 .commentPost {
   background-color: black;
   padding: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 .iconNameButton {
   display: flex;

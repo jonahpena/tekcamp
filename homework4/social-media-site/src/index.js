@@ -4,15 +4,19 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavigationBar from "./NavigationBar";
 import CommentPost from "./CommentPost";
-import ProfilePicture from "./ProfilePicture";
+import WhatsHappening from "./WhatsHappening";
+import PostTweet from "./PostTweet";
+import MiddleNavBar from "./MiddleNavBar";
+import ProfileSection from "./ProfileSection";
 
 function App() {
   return (
     <div>
       <ul>
+        <ProfileSection />
+        <PostTweet />
         <CommentPost />
-        <CommentPost />
-        <CommentPost />
+        <WhatsHappening />
       </ul>
     </div>
   );

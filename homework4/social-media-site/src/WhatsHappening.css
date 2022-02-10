@@ -1,0 +1,44 @@
+.whatsHappening {
+  background-color: #15181c;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 0.8em;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.happeningTitle {
+  color: white;
+  font-size: 20px;
+  font-style: bold;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.happeningFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.happeningHeader {
+  color: grey;
+  opacity: 60%;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+.happeningImage {
+  height: 50px;
+}
+
+.happeningContent {
+  color: white;
+}
+
+.showMore {
+  cursor: pointer;
+  text-decoration: none;
+  color: #1d9bf0;
+}
