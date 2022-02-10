@@ -1,0 +1,32 @@
+.commentPost {
+  background-color: black;
+  padding: 10px;
+}
+.iconNameButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.followButton {
+  background-color: white;
+  border-radius: 0.9em;
+  color: black;
+  border-color: white;
+  border-width: 1px;
+  width: 100px;
+  height: 30px;
+}
+
+.followButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.commentContent {
+  color: white;
+  padding-left: 100px;
+}
+
+.profileName {
+  color: white;
+}
