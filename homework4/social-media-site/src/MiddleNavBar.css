@@ -1,14 +1,14 @@
 .middleNavList {
   display: flex;
   flex-direction: row;
-  margin-left: 450px;
-  margin-right: 450px;
+  margin-left: 300px;
+  margin-right: 300px;
   background-color: black;
   color: white;
   font-size: 14px;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 60px;
+  padding-right: 70px;
   padding-top: 20px;
   padding-bottom: 0px;
 }

@@ -5,7 +5,8 @@ function CommentPost(props) {
     <div className="commentPost">
       <div className="iconNameButton">
         <img src="favicon.ico" />
-        <h1 className="profileName">Name here</h1>
+        <h1>Name here</h1>
+        <p>2h ago</p>
         <button className="followButton">Follow</button>
       </div>
       <h4 className="profileNameTwo">@Nameheretoo</h4>
@@ -16,6 +17,11 @@ function CommentPost(props) {
         Mollit nostrud reprehenderit ut labore est cupidatat laborum labore
         laborum culpa aliquip.
       </p>
+      <div className="commentPostIconContainer">
+        <img className="likeCommentRetweet" src="logo192.png" />
+        <img className="likeCommentRetweet" src="logo192.png" />
+        <img className="likeCommentRetweet" src="logo192.png" />
+      </div>
     </div>
   );
 }

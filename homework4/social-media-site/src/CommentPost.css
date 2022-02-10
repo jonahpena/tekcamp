@@ -7,7 +7,19 @@
 .iconNameButton {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -20px;
+  margin-bottom: -30px;
+  padding-right: 15px;
+}
+
+.iconNameButton h1 {
+  font-size: 30px;
+  color: white;
+}
+.iconNameButton p {
+  padding-right: 350px;
+  color: grey;
+
+  margin-top: 7px;
 }
 
 .followButton {
@@ -28,14 +40,22 @@
 
 .commentContent {
   color: white;
-  padding-left: 100px;
-}
-
-.profileName {
-  color: white;
-  padding-right: 980px;
+  padding-left: 90px;
+  padding-right: 15px;
 }
 
 .profileNameTwo {
   padding-left: 90px;
+  font-size: 20px;
+  color: grey;
+}
+
+.commentPostIconContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.likeCommentRetweet {
+  height: 25px;
+  width: 25px;
 }

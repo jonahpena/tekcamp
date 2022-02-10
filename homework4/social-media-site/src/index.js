@@ -13,8 +13,11 @@ function App() {
   return (
     <div>
       <ul>
+        <MiddleNavBar />
         <ProfileSection />
         <PostTweet />
+        <CommentPost />
+        <CommentPost />
         <CommentPost />
         <WhatsHappening />
       </ul>
