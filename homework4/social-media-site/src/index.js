@@ -8,6 +8,7 @@ import WhatsHappening from "./WhatsHappening";
 import PostTweet from "./PostTweet";
 import MiddleNavBar from "./MiddleNavBar";
 import ProfileSection from "./ProfileSection";
+import UserList from "./UserList";
 
 function App() {
   return (
@@ -31,11 +32,6 @@ function App() {
         <CommentPost />
         <CommentPost />
         <CommentPost />
-        {/*         <CommentPost />
-        <CommentPost />
-        <CommentPost />
-        <CommentPost />
-        <CommentPost /> */}
       </ul>
     </div>
   );

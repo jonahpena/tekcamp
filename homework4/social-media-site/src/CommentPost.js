@@ -1,11 +1,12 @@
 import "./CommentPost.css";
+import "./User";
 
 function CommentPost(props) {
   return (
     <div className="commentPost">
       <div className="iconNameButton">
         <img src="favicon.ico" />
-        <h1>Name here</h1>
+        <h1>Name Here</h1>
         <p className="timePosted">2h ago</p>
         <button className="followButton">Follow</button>
       </div>
