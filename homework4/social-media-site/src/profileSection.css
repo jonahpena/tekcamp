@@ -23,7 +23,7 @@
 .pictureButtonContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .profileSection h1 {
@@ -43,4 +43,35 @@
 .profileSectionText {
   opacity: 50%;
   padding-right: 30px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+  .profileSection {
+    margin-left: -32px;
+    margin-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+  }
+  .editProfileButton {
+    display: none;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0.99em;
+    color: white;
+    background-color: transparent;
+    border-color: grey !important;
+    border-style: none;
+    border-style: solid;
+    border-width: 0.2px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .profileSection h1 {
+    padding-top: 40px;
+  }
 }

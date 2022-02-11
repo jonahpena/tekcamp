@@ -6,7 +6,7 @@ function CommentPost(props) {
       <div className="iconNameButton">
         <img src="favicon.ico" />
         <h1>Name here</h1>
-        <p>2h ago</p>
+        <p className="timePosted">2h ago</p>
         <button className="followButton">Follow</button>
       </div>
       <h4 className="profileNameTwo">@Nameheretoo</h4>

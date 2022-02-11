@@ -6,15 +6,13 @@ function ProfileSection() {
       <div>
         <div className="pictureButtonContainer">
           <img src="logo192.png" />
-          <button className="editProfileButton">Edit Profile</button>
         </div>
-
-        <h1>Jonah</h1>
-        <p className="profileSectionText">@Jonah534523453</p>
-        <p className="profileSectionText">Joined January 2022</p>
+        <h1>Jonah Pena</h1>
+        <p className="profileSectionText">Gender: Male</p>
+        <p className="profileSectionText">Born: 05/22/94</p>
         <div className="followingFollowersContainer">
-          <p className="profileSectionText">Following</p>
-          <p className="profileSectionText">Followers</p>
+          <p className="profileSectionText">Carrolton, TX - USA</p>
+          <p className="profileSectionText"></p>
         </div>
       </div>
     </div>

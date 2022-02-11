@@ -13,13 +13,29 @@ function App() {
   return (
     <div>
       <ul>
-        <MiddleNavBar />
         <ProfileSection />
+        <MiddleNavBar />
         <PostTweet />
         <CommentPost />
         <CommentPost />
         <CommentPost />
-        <WhatsHappening />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        {/*         <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost />
+        <CommentPost /> */}
       </ul>
     </div>
   );

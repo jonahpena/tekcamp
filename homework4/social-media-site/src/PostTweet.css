@@ -9,6 +9,9 @@
   padding-bottom: 20px;
   margin-left: 300px;
   margin-right: 300px;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
 }
 
 .postTitle {
@@ -27,6 +30,7 @@
   border-top-color: grey;
   border-top-style: solid;
   border-top-width: 0.5px;
+
   padding-right: 10px;
 }
 
@@ -60,4 +64,17 @@
   border-color: transparent;
   width: 70px;
   height: 30px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+  .postTweet {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: -32px;
+    margin-right: 0px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+  }
 }

@@ -1,6 +1,9 @@
 .commentPost {
   background-color: black;
-  padding: 10px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: 300px;
   margin-right: 300px;
 }
@@ -15,11 +18,11 @@
   font-size: 30px;
   color: white;
 }
+
 .iconNameButton p {
   padding-right: 350px;
   color: grey;
-
-  margin-top: 7px;
+  margin-top: 8px;
 }
 
 .followButton {
@@ -58,4 +61,62 @@
 .likeCommentRetweet {
   height: 25px;
   width: 25px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+  .commentPost {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -32px;
+    margin-right: 0px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+  }
+  .iconNameButton {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+
+  .iconNameButton h1 {
+    padding-left: 0px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .iconNameButton p {
+    padding-right: 70px;
+    color: grey;
+    margin-top: 8px;
+  }
+  .timePosted {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+  }
+
+  .followButton {
+    display: none;
+  }
+
+  .followButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .commentContent {
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+  }
+
+  .profileNameTwo {
+    padding-left: 85px;
+    margin-top: -45px;
+    font-size: 15px;
+    color: grey;
+  }
 }
