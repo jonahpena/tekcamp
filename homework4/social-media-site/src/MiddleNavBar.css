@@ -17,6 +17,11 @@
     padding-left: 5px;
     padding-right: 5px;
   }
+  .navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
 }
 
 /* DESKTOP */
@@ -24,7 +29,7 @@
   .middleNavList {
     display: flex;
     flex-direction: row;
-    margin-left: 300px;
+    margin-left: 332px;
     margin-right: 300px;
     background-color: black;
     color: white;
@@ -34,7 +39,11 @@
     padding-right: 70px;
     padding-top: 20px;
     padding-bottom: 0px;
+  }
+  .navLink {
     text-decoration: none;
+    color: white;
+    font-size: 14px;
   }
 
   .middleNavItem {

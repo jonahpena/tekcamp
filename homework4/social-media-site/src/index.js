@@ -19,9 +19,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ul>
-          <MiddleNavBar />
-        </ul>
+        <MiddleNavBar />
+
         <div className="content">
           <Switch>
             <Route exact path="/">
@@ -35,7 +34,7 @@ function App() {
             </Route>
             <Route path="/MyProfile">
               <ul>
-                <MyProfile />
+                {/* <MyProfile /> */}
                 <ProfileSection />
                 <BlogPostContent />
                 <BlogPostContent />

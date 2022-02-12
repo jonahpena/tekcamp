@@ -6,10 +6,13 @@ function MiddleNavBar() {
   return (
     <div className="middleNavBar">
       <div className="middleNavList">
-        <Link to="/">Dashboard</Link>
-        <Link to="/MyProfile">My Profile</Link>
+        <Link className="navLink" to="/">
+          Dashboard
+        </Link>
+        <Link className="navLink" to="/MyProfile">
+          My Profile
+        </Link>
       </div>
-      <div className="buttonContainer"></div>
     </div>
   );
 }
