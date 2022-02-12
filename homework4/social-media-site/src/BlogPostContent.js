@@ -1,9 +1,9 @@
-import "./CommentPost.css";
+import "./blogPostContent.css";
 import "./User";
 
-function CommentPost(props) {
+function BlogPostContent(props) {
   return (
-    <div className="commentPost">
+    <div className="blogPostContent">
       <div className="iconNameButton">
         <img src="favicon.ico" />
         <h1>Name Here</h1>
@@ -26,4 +26,5 @@ function CommentPost(props) {
     </div>
   );
 }
-export default CommentPost;
+
+export default BlogPostContent;

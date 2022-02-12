@@ -1,3 +1,4 @@
+/* MOBILE */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
   .middleNavList {
     margin-left: -32px;
@@ -7,7 +8,7 @@
     background-color: black;
     color: white;
     font-size: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 20px;
@@ -18,6 +19,7 @@
   }
 }
 
+/* DESKTOP */
 @media only screen and (min-device-width: 1080px) and (max-device-height: 1440px) {
   .middleNavList {
     display: flex;
@@ -27,11 +29,12 @@
     background-color: black;
     color: white;
     font-size: 14px;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 60px;
     padding-right: 70px;
     padding-top: 20px;
     padding-bottom: 0px;
+    text-decoration: none;
   }
 
   .middleNavItem {

@@ -20,4 +20,5 @@ function NavigationBar({ navItem }) {
     </div>
   );
 }
+
 export default NavigationBar;
