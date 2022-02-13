@@ -23,6 +23,9 @@ function BlogPostContent(props) {
         <img className="likeCommentRetweet" src="logo192.png" />
         <img className="likeCommentRetweet" src="logo192.png" />
       </div>
+      <div className="commentPostIconContainer">
+        <button>Leave comment</button>
+      </div>
     </div>
   );
 }

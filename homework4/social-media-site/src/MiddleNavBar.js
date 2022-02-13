@@ -1,4 +1,3 @@
-import NavOption from "./NavOption";
 import "./MiddleNavBar.css";
 import { Link } from "react-router-dom";
 
