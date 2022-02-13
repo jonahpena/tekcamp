@@ -1,7 +1,15 @@
 import "./blogPostContent.css";
 import "./User";
+import { useState } from "react";
 
 function BlogPostContent(props) {
+  const [title, setTitle] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const blog = { title };
+    console.log(blog);
+  };
   return (
     <div className="blogPostContent">
       <div className="iconNameButton">
@@ -24,7 +32,16 @@ function BlogPostContent(props) {
         <img className="likeCommentRetweet" src="logo192.png" />
       </div>
       <div className="commentPostIconContainer">
-        <button>Leave comment</button>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            required
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <button>Leave comment</button>
+          <p> {title} </p>
+        </form>
       </div>
     </div>
   );
