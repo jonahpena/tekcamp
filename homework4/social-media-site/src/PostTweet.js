@@ -1,5 +1,4 @@
 import "./Stylesheets/PostTweet.css";
-import { useState } from "react";
 
 function PostTweet() {
   return (

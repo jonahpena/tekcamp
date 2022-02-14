@@ -28,7 +28,6 @@ const Create = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
         <button>Leave comment</button>
-        <p> {title} </p>
       </form>
     </div>
   );

@@ -8,8 +8,11 @@ import BlogPostContent from "./BlogPostContent";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CommentList from "./CommentList";
 import Create from "./Create";
+/* import { useState } from "react"; */
 
 function App() {
+  /*   const [post, setPost] = useState(); */
+
   return (
     <Router>
       <div className="App">
@@ -23,11 +26,38 @@ function App() {
                 <PostTweet />
                 <BlogPostContent />
                 <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
               </ul>
             </Route>
             <Route path="/MyProfile">
               <ul>
                 <ProfileSection />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
+                <BlogPostContent />
                 <BlogPostContent />
               </ul>
             </Route>
