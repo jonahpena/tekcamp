@@ -1,15 +1,21 @@
-import "./blogPostContent.css";
-import "./User";
+import "./Stylesheets/blogPostContent.css";
 import { useState } from "react";
 
 function BlogPostContent(props) {
-  const [title, setTitle] = useState("");
+  /*   const [title, setTitle] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { title };
-    console.log(blog);
-  };
+
+        fetch("http://localhost:8000/blogs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      title: JSON.stringify(blog),
+    }).then(() => {
+      console.log("new blog added");
+    });
+  }; */
   return (
     <div className="blogPostContent">
       <div className="iconNameButton">
@@ -32,7 +38,7 @@ function BlogPostContent(props) {
         <img className="likeCommentRetweet" src="logo192.png" />
       </div>
       <div className="commentPostIconContainer">
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}>
           <input
             type="text"
             required
@@ -41,7 +47,7 @@ function BlogPostContent(props) {
           />
           <button>Leave comment</button>
           <p> {title} </p>
-        </form>
+        </form> */}
       </div>
     </div>
   );

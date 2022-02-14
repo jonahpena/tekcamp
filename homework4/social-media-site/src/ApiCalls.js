@@ -6,5 +6,4 @@ export function GetComment() {
       "app-id": API_KEY,
     },
   }).then((commentapi) => commentapi.json());
-  console.log(commentapi);
 }

@@ -4,11 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import PostTweet from "./PostTweet";
 import MiddleNavBar from "./MiddleNavBar";
 import ProfileSection from "./ProfileSection";
-import UserList from "./UserList";
 import BlogPostContent from "./BlogPostContent";
-import User from "./User";
-import UserListDisplay from "./UserListDisplay";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import CommentList from "./CommentList";
+import Create from "./Create";
 
 function App() {
   return (
@@ -20,9 +19,8 @@ function App() {
           <Switch>
             <Route exact path="/">
               <ul>
+                <Create />
                 <PostTweet />
-                <BlogPostContent />
-                <BlogPostContent />
                 <BlogPostContent />
                 <BlogPostContent />
               </ul>
@@ -30,9 +28,6 @@ function App() {
             <Route path="/MyProfile">
               <ul>
                 <ProfileSection />
-                <BlogPostContent />
-                <BlogPostContent />
-                <BlogPostContent />
                 <BlogPostContent />
               </ul>
             </Route>

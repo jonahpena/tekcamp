@@ -1,4 +1,4 @@
-import "./profileSection.css";
+import "./Stylesheets/profileSection.css";
 
 function ProfileSection() {
   return (
@@ -11,7 +11,7 @@ function ProfileSection() {
         <p className="profileSectionText">Gender: Male</p>
         <p className="profileSectionText">Born: 05/22/94</p>
         <div className="followingFollowersContainer">
-          <p className="profileSectionText">Carrolton, TX - USA</p>
+          <p className="profileSectionText">Carrollton, TX - USA</p>
           <p className="profileSectionText"></p>
         </div>
       </div>

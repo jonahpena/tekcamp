@@ -1,4 +1,5 @@
-import "./PostTweet.css";
+import "./Stylesheets/PostTweet.css";
+import { useState } from "react";
 
 function PostTweet() {
   return (
@@ -11,11 +12,6 @@ function PostTweet() {
         </div>
         <div className="iconButtonContainer">
           <div className="iconList">
-            <img className="iconListItem" src="logo192.png" />
-            <img className="iconListItem" src="logo192.png" />
-            <img className="iconListItem" src="logo192.png" />
-            <img className="iconListItem" src="logo192.png" />
-            <img className="iconListItem" src="logo192.png" />
             <img className="iconListItem" src="logo192.png" />
           </div>
           <div className="postTweetButtonContainer">

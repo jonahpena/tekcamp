@@ -1,4 +1,4 @@
-import "./MiddleNavBar.css";
+import "./Stylesheets/MiddleNavBar.css";
 import { Link } from "react-router-dom";
 
 function MiddleNavBar() {
