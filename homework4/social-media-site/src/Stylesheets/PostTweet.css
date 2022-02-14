@@ -1,0 +1,80 @@
+.postTweet {
+  background-color: black;
+  margin-left: 450px;
+  margin-right: 450px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+}
+
+.postTitle {
+  color: white;
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.iconButtonContainer {
+  display: flex;
+  margin-left: 50px;
+  padding-top: 10px;
+  justify-content: space-between;
+  border-top-color: grey;
+  border-top-style: solid;
+  border-top-width: 0.5px;
+
+  padding-right: 10px;
+}
+
+.iconListItem {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+
+.postAvatar {
+  height: 50px;
+}
+
+.postInput {
+  color: white;
+  background-color: black;
+  border-color: transparent;
+}
+
+.iconListItem {
+  height: 25px;
+}
+
+.happeningContent {
+  color: white;
+}
+
+.postTweetButton {
+  background-color: #1d9bf0;
+  border-radius: 0.99em;
+  color: white;
+  border-color: transparent;
+  width: 70px;
+  height: 30px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+  .postTweet {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: -32px;
+    margin-right: 0px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+  }
+}
