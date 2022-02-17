@@ -2,6 +2,7 @@ import React from "react";
 import "./SearchBar.css";
 import { useState } from "react";
 import JSONDATA from "./data.json";
+import { Link } from "react-router-dom";
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -28,8 +29,10 @@ function SearchBar() {
           <div className="product" key={key}>
             <div className="infoContainer">
               <img className="imageContainer" src={val.image} />
-              <p className="productName">{val.name}</p>
-              <p className="productPrice">{val.price}</p>
+              <Link to={`/product/${val.id}`}>
+                <p className="productName">{val.name}</p>
+                <p className="productPrice">{val.price}</p>
+              </Link>
             </div>
           </div>
         );
