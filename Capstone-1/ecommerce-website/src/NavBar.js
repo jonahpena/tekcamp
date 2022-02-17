@@ -1,5 +1,4 @@
-import "./NavBar.css";
-import App from "./App";
+import "./Stylesheets/NavBar.css";
 
 function NavBar() {
   return (
