@@ -20,9 +20,6 @@ function ImageList() {
                       <option value="S">S</option>
                       <option value="M">M</option>
                       <option value="L">L</option>
-                      <option value="XL">XL</option>
-                      <option value="XXL">XXL</option>
-                      <option value="XXXL">XXXL</option>
                     </select>
                   </form>
                   <button className="addCart">Add to Cart</button>

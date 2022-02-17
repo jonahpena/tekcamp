@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ImageList from "./ImageList";
+import App from "./App";
+
 import NavBar from "./NavBar";
+import SearchBar from "./SearchBar";
 
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
-    <ImageList />
+    <SearchBar />
   </React.StrictMode>,
   document.getElementById("root")
 );

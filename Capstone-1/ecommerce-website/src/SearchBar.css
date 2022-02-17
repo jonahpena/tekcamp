@@ -1,5 +1,24 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .searchContainer {
   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.imageContainer {
+  object-fit: contain;
+  height: 500px;
+  width: 400px;
+}
+.infoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .inputText {
@@ -12,4 +31,8 @@
   margin-top: 10px;
   padding: 5px;
   margin-bottom: 10px;
+}
+
+.productName {
+  font-size: 18px;
 }
