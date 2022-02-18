@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import SearchBar from "./SearchBar";
+import SearchProduct from "./SearchProduct";
 
 class App extends React.Component {
   onSearchSubmit(term) {
@@ -10,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui-container" style={{ marginTop: "10px" }}>
-        <SearchBar />
+        <SearchProduct />
       </div>
     );
   }
