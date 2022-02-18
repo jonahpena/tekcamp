@@ -1,4 +1,4 @@
-import Data from "./data.json";
+import Data from "../src/data.json";
 import "./ImageList.css";
 
 function ImageList() {
