@@ -1,10 +1,10 @@
-import React from "react";
-import "./SearchProduct.css";
+import React, { Component } from "react";
+import "./Stylesheets/SearchProduct.css";
 import { useState } from "react";
 import JSONDATA from "./data.json";
 import { Link } from "react-router-dom";
 
-function SearchProduct() {
+function SearchProduct(props) {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <div className="searchContainer">
@@ -29,18 +29,11 @@ function SearchProduct() {
           <div className="product" key={key}>
             <div className="infoContainer">
               <img className="imageContainer" src={val.image} />
-              <Link
-                to={{
-                  pathname: `/product/${val.id}`,
-                  state: {
-                    name: `${val.name}`,
-                    price: "",
-                  },
-                }}
-              >
+              <Link to={"/product/" + val.id}>
                 <p className="productName">{val.name}</p>
-                <p className="productPrice">{val.price}</p>
               </Link>
+              <p className="productPrice">{val.price}</p>
+              <button>Add to Cart</button>
             </div>
           </div>
         );

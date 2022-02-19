@@ -1,30 +1,20 @@
 import { useParams } from "react-router-dom";
 import JSONDATA from "./data.json";
 import React, { Component } from "react";
+import "./Stylesheets/SearchProduct.css";
 
 const ProductDetails = (props) => {
   const { id } = useParams();
+  const product = props.propsData.find((x) => x.id == id);
   console.log("child data", props);
 
-  const productFilter = props.propsData.map((product) => {
-    return (
-      <div>
-        <p>{product.id}</p>
-        <img
-          className="imageContainer"
-          src={product.image}
-          alt={product.name}
-        />
-        <p>{product.name}</p>
-        <p>{product.price}</p>
-      </div>
-    );
-  });
-
   return (
-    <div className="product-details">
-      <h2>Product Details - {id} </h2>
-      {productFilter}
+    <div className="productDetails">
+      <h2>{product.name}</h2>
+      <img className="imageContainer" src={product.image} />
+      <h1>{product.price}</h1>
+      <p>{product.serial}</p>
+      <button>Add to Cart</button>
     </div>
   );
 };

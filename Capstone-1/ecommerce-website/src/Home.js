@@ -11,7 +11,6 @@ export class Home extends Component {
   state = {
     myData: JSONDATA,
   };
-
   render() {
     console.log("from header", JSONDATA);
     return (
