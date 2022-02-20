@@ -5,76 +5,66 @@ import SearchProduct from "./SearchProduct";
 import ProductDetails from "./ProductDetails";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import JSONDATA from "./data.json";
-import { Component } from "react";
+import { useState } from "react";
+import Basket from "./components/Basket";
+import Product from "./components/Product";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
-export class Home extends Component {
-  state = {
-    myData: JSONDATA,
+function Home() {
+  const [myData, setMyData] = useState(JSONDATA);
+  const [cartItems, setCartItems] = useState([]);
+  const onAdd = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+
+    if (exist) {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, quantity: exist.quantity + 1 } : x
+        )
+      );
+    } else {
+      setCartItems([...cartItems, { ...product, quantity: 1 }]);
+    }
   };
-  render() {
-    console.log("from header", JSONDATA);
-    return (
-      <div>
-        <Router>
-          <NavBar />
-          <Switch>
-            <Route exact path="/">
-              <SearchProduct />
-            </Route>
-            <Route path="/product/:id" component={ProductDetails}>
-              <ProductDetails propsData={this.state.myData} />
-            </Route>
-          </Switch>
-        </Router>
-      </div>
-    );
-  }
+  const onRemove = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+
+    if (exist.quantity === 1) {
+      setCartItems(cartItems.filter((x) => x.id !== product.id));
+    } else {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, quantity: exist.quantity - 1 } : x
+        )
+      );
+    }
+  };
+  return (
+    <div>
+      <Router>
+        <NavBar />
+        <Header countCartItems={cartItems.length} />
+        <Basket onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
+        {/*  <Product
+          key={myData.id}
+          product={myData}
+          onRemove={onRemove}
+          onAdd={onAdd}
+          cartItems={cartItems}
+        /> */}
+        <Main products={myData} onAdd={onAdd} />
+        <Switch>
+          <Route exact path="/">
+            <SearchProduct onAdd={onAdd} product={myData} />
+          </Route>
+          <Route path="/product/:id" component={ProductDetails}>
+            <ProductDetails propsData={myData} />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  );
 }
 
 export default Home;
-
-/* function Home() {
-  state = {
-    myData: JSONDATA,
-  };
-
-  return (
-    <div>
-      <Router>
-        <NavBar />
-        <Switch>
-          <Route exact path="/">
-            <SearchProduct />
-          </Route>
-          <Route path="/product/:id" component={ProductDetails}>
-            <ProductDetails propsData={this.state.myData} />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
-}
-
-export default Home; */
-
-/* function Home() {
-
-
-  return (
-    <div>
-      <Router>
-        <NavBar />
-        <Switch>
-          <Route exact path="/">
-            <SearchProduct />
-          </Route>
-          <Route path="/product/:id" component={ProductDetails}>
-            <ProductDetails/>
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
-}
-
-export default Home; */
