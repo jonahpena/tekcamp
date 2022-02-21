@@ -3,6 +3,7 @@ import "./Stylesheets/SearchProduct.css";
 import { useState } from "react";
 import JSONDATA from "./data.json";
 import { Link } from "react-router-dom";
+import { Form } from "reactstrap";
 
 function SearchProduct(props) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -40,6 +41,7 @@ function SearchProduct(props) {
                 <p className="productName">{product.name}</p>
               </Link>
               <p className="productPrice">{product.price}.00</p>
+
               <button className="addButton" onClick={() => onAdd(product)}>
                 Add To Cart
               </button>
