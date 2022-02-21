@@ -20,21 +20,23 @@ function SearchProduct(props) {
           type="text"
         />
       </form>
-      {JSONDATA.filter((val) => {
+      {JSONDATA.filter((product) => {
         if (searchTerm == "") {
-          return val;
-        } else if (val.name.toLowerCase().includes(searchTerm.toLowerCase())) {
-          return val;
+          return product;
+        } else if (
+          product.name.toLowerCase().includes(searchTerm.toLowerCase())
+        ) {
+          return product;
         }
-      }).map((val, key) => {
+      }).map((product, key) => {
         return (
           <div className="product" key={key}>
             <div className="infoContainer">
-              <img className="imageContainer" src={val.image} />
-              <Link to={"/product/" + val.id}>
-                <p className="productName">{val.name}</p>
+              <img className="imageContainer" src={product.image} />
+              <Link to={"/product/" + product.id}>
+                <p className="productName">{product.name}</p>
               </Link>
-              <p className="productPrice">{val.price}</p>
+              <p className="productPrice">{product.price}</p>
               <button onClick={() => onAdd(product)}>Add To Cart</button>
             </div>
           </div>

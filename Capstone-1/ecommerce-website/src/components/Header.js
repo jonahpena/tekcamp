@@ -1,23 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../Stylesheets/NavBar.css";
 
 export default function Header(props) {
   return (
-    <header className="block row center">
+    <header className="NavContainer">
       <div>
-        <a href="#/">
-          <h1>Small Shopping Cart</h1>
-        </a>
-      </div>
-      <div>
-        <a href="#/cart">
+        <Link to={"/cart"}>
           Cart{" "}
           {props.countCartItems ? (
             <button className="badge">{props.countCartItems}</button>
           ) : (
             ""
           )}
-        </a>{" "}
-        <a href="#/signin"> SignIn</a>
+        </Link>{" "}
+        <Link to={"/"}>
+          <button className="homeButton">Home Button</button>
+        </Link>
       </div>
     </header>
   );

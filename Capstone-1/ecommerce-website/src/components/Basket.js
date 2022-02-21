@@ -1,7 +1,8 @@
 import React from "react";
+import "../Stylesheets/SearchProduct.css";
 
 export default function Basket(props) {
-  const { cartItems, onAdd, onRemove } = props;
+  const { cartItems, onAdd, onRemove, itemQuantity } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.quantity * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
@@ -14,6 +15,11 @@ export default function Basket(props) {
         {cartItems.map((item) => (
           <div key={item.id} className="row">
             <div className="col-2">{item.name}</div>
+            <img
+              className="imageContainerCart"
+              src={item.image}
+              alt={item.name}
+            />
             <div className="col-2">
               <button onClick={() => onRemove(item)} className="remove">
                 -

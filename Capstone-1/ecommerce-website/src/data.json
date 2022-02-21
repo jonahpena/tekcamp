@@ -11,7 +11,7 @@
     "id": "2",
     "name": "Beats of Paradise Hoodie",
     "serial": "#2138120975",
-    "price": 4000,
+    "price": 40,
     "quantity": 66,
     "image": "/images/hoodie2.png"
   },
@@ -19,7 +19,7 @@
     "id": "3",
     "name": "Beats of Paradise T-Shirt",
     "serial": "#2138120975",
-    "price": 2500,
+    "price": 25,
     "quantity": 48,
     "image": "/images/shirt1.png"
   },
@@ -27,7 +27,7 @@
     "id": "4",
     "name": "L.Dre - BOP Tee",
     "serial": "#2138120975",
-    "price": 2500,
+    "price": 25,
     "quantity": 24,
     "image": "/images/shirt2.png"
   },
@@ -35,7 +35,7 @@
     "id": "5",
     "name": "Cycles - Color Block T-Shirt",
     "serial": "#2138120975",
-    "price": 2500,
+    "price": 25,
     "quantity": 27,
     "image": "/images/shirt3.png"
   },
@@ -43,7 +43,7 @@
     "id": "6",
     "name": "L.Dre BOP Dad Hat",
     "serial": "#2138120975",
-    "price": 2500,
+    "price": 25,
     "quantity": 22,
     "image": "/images/cap.png"
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "name": "L.Dre BOP Beanie",
     "serial": "#2138120975",
-    "price": 2500,
+    "price": 25,
     "quantity": 43,
     "image": "/images/beanie.png"
   },
@@ -59,7 +59,7 @@
     "id": "8",
     "name": "Birds of Paradise - Limited Edition Vinyl",
     "serial": "#2138120975",
-    "price": 3000,
+    "price": 30,
     "quantity": 22,
     "image": "/images/vinyl1.png"
   },
@@ -67,7 +67,7 @@
     "id": "9",
     "name": "Lofi Toons - Vinyl",
     "serial": "#2138120975",
-    "price": 3000,
+    "price": 30,
     "quantity": 34,
     "image": "/images/vinyl2.png"
   },
@@ -75,7 +75,7 @@
     "id": "10",
     "name": "Sno-Fi Vinyl - A Jazzy Lo-Fi Holiday Album by L.Dre",
     "serial": "#2138120975",
-    "price": 3000,
+    "price": 30,
     "quantity": 48,
     "image": "/images/vinyl3.png"
   }

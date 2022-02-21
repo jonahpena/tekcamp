@@ -14,6 +14,7 @@ import Main from "./components/Main";
 function Home() {
   const [myData, setMyData] = useState(JSONDATA);
   const [cartItems, setCartItems] = useState([]);
+
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
 
@@ -43,20 +44,14 @@ function Home() {
   return (
     <div>
       <Router>
-        <NavBar />
         <Header countCartItems={cartItems.length} />
-        <Basket onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
-        {/*  <Product
-          key={myData.id}
-          product={myData}
-          onRemove={onRemove}
-          onAdd={onAdd}
-          cartItems={cartItems}
-        /> */}
-        <Main products={myData} onAdd={onAdd} />
+
         <Switch>
           <Route exact path="/">
-            <SearchProduct onAdd={onAdd} product={myData} />
+            <Main products={myData} onAdd={onAdd} />
+          </Route>
+          <Route exact path="/cart">
+            <Basket onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
           </Route>
           <Route path="/product/:id" component={ProductDetails}>
             <ProductDetails propsData={myData} />

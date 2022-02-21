@@ -9,7 +9,6 @@ function NavBar() {
       <Link to={"/"}>
         <button className="homeButton">Home Button</button>
       </Link>
-      <button className="cartButton">0</button>
     </div>
   );
 }
