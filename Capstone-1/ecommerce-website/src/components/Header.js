@@ -16,7 +16,6 @@ export default function Header(props) {
         <Link to={"/"}></Link>
       </div>
       <div>
-        <img src="./images/cart1.png" />
         <Link className="cart" to={"/cart"}>
           {" "}
           {props.countCartItems ? (

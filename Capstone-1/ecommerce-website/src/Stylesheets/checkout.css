@@ -1,6 +1,13 @@
 .formContainer {
-  margin-left: 200px;
-  padding-left: 200px;
+  padding-left: 50px;
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .row {
@@ -59,19 +66,18 @@ label {
 }
 
 .btn {
-  background-color: #04aa6d;
+  background-color: black;
   color: white;
   padding: 12px;
   margin: 10px 0;
   border: none;
-  width: 100%;
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: grey;
 }
 
 span.price {
@@ -87,8 +93,4 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
-}
-
-.formContainer {
-  margin-left: 200px;
 }

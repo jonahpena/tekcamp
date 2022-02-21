@@ -1,5 +1,6 @@
 import React from "react";
 import "../Stylesheets/Basket.css";
+import { Form, FormGroup, Label, Input, Button, Row, Col } from "reactstrap";
 
 import { Link } from "react-router-dom";
 export default function Basket(props) {
@@ -69,9 +70,11 @@ export default function Basket(props) {
             <hr />
             <div>
               <Link className="checkout" to={"/cart/checkout"}>
-                <div>
-                  <button className="checkout">Checkout</button>
-                </div>
+                <Form>
+                  <div>
+                    <Button>Confirm Order</Button>
+                  </div>
+                </Form>
               </Link>
             </div>
           </>

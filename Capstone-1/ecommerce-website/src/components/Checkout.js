@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, FormGroup, Label, Input, Button, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import "./Stylesheets/checkout.css";
 
 function Checkout() {
   return (
@@ -35,12 +34,8 @@ function Checkout() {
         <Input id="exampleAddress" name="address" placeholder="1234 Main St" />
       </FormGroup>
       <FormGroup className="formContainer">
-        <Label for="exampleAddress2">Address 2</Label>
-        <Input
-          id="exampleAddress2"
-          name="address2"
-          placeholder="Apartment, studio, or floor"
-        />
+        <Label for="exampleAddress2">Card #</Label>
+        <Input id="exampleAddress2" name="address2" placeholder="Card #" />
       </FormGroup>
       <Row className="formContainer">
         <Col md={6}>

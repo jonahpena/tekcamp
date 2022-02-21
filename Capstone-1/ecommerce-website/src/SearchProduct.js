@@ -22,9 +22,6 @@ function SearchProduct(props) {
         />
       </form>
       {JSONDATA.filter((product) => {
-        /*         if (searchTerm !== product) {
-          return <div>hi</div>;
-        } */
         if (searchTerm == "") {
           return product;
         } else if (
@@ -42,9 +39,7 @@ function SearchProduct(props) {
               <Link className="productName" to={"/product/" + product.id}>
                 <p className="productName">{product.name}</p>
               </Link>
-
               <p className="productPrice">{product.price}.00</p>
-
               <button className="addButton" onClick={() => onAdd(product)}>
                 Add To Cart
               </button>
