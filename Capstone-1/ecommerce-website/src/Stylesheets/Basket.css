@@ -25,7 +25,7 @@
 .flexCart {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .receiptInfo {
   display: flex;
