@@ -3,13 +3,13 @@ import "./Stylesheets/SearchProduct.css";
 import { useState } from "react";
 import JSONDATA from "./data.json";
 import { Link } from "react-router-dom";
-import Product from "./components/Product";
 
 function SearchProduct(props) {
   const [searchTerm, setSearchTerm] = useState("");
   const { product, onAdd } = props;
   return (
     <div className="searchContainer">
+      <h1 className="merchandise">Merchandise</h1>
       <form>
         <input
           onChange={(event) => {
@@ -21,6 +21,9 @@ function SearchProduct(props) {
         />
       </form>
       {JSONDATA.filter((product) => {
+        /*         if (searchTerm !== product) {
+          return <div>hi</div>;
+        } */
         if (searchTerm == "") {
           return product;
         } else if (
@@ -32,12 +35,18 @@ function SearchProduct(props) {
         return (
           <div className="product" key={key}>
             <div className="infoContainer">
-              <img className="imageContainer" src={product.image} />
-              <Link to={"/product/" + product.id}>
+              <Link className="productName" to={"/product/" + product.id}>
+                <img className="imageContainer" src={product.image} />
+              </Link>
+              <Link className="productName" to={"/product/" + product.id}>
                 <p className="productName">{product.name}</p>
               </Link>
-              <p className="productPrice">{product.price}</p>
-              <button onClick={() => onAdd(product)}>Add To Cart</button>
+              <Link className="productName" to={"/product/" + product.id}>
+                <p className="productPrice">{product.price}.00</p>
+              </Link>
+              <button className="addButton" onClick={() => onAdd(product)}>
+                Add To Cart
+              </button>
             </div>
           </div>
         );

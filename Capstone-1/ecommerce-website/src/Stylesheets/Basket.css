@@ -1,0 +1,13 @@
+.productName {
+  font-size: 20px;
+  padding: 10px;
+}
+.productPrice {
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+.checkoutDetailsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

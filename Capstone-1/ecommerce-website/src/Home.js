@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import NavBar from "./NavBar";
-import SearchProduct from "./SearchProduct";
 import ProductDetails from "./ProductDetails";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import JSONDATA from "./data.json";
 import { useState } from "react";
 import Basket from "./components/Basket";
-import Product from "./components/Product";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Checkout from "./Checkout";
 
 function Home() {
   const [myData, setMyData] = useState(JSONDATA);
@@ -53,8 +52,12 @@ function Home() {
           <Route exact path="/cart">
             <Basket onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
           </Route>
+          <Route exact path="/cart/checkout">
+            <Basket onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
+            <Checkout />
+          </Route>
           <Route path="/product/:id" component={ProductDetails}>
-            <ProductDetails propsData={myData} />
+            <ProductDetails onAdd={onAdd} propsData={myData} />
           </Route>
         </Switch>
       </Router>

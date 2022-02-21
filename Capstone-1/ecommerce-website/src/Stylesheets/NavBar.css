@@ -1,21 +1,9 @@
 .NavContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   background-color: black;
-}
-.cartButton {
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 2px;
-  border-radius: 50%;
 }
 
 .homeButton {

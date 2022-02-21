@@ -1,6 +1,7 @@
 import React from "react";
-import "../Stylesheets/SearchProduct.css";
+import "../Stylesheets/Basket.css";
 
+import { Link } from "react-router-dom";
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove, itemQuantity } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.quantity * c.price, 0);
@@ -13,8 +14,8 @@ export default function Basket(props) {
       <div>
         {cartItems.length === 0 && <div>Cart is empty</div>}
         {cartItems.map((item) => (
-          <div key={item.id} className="row">
-            <div className="col-2">{item.name}</div>
+          <div key={item.id} className="checkoutDetailsContainer">
+            <div className="productName">{item.name}</div>
             <img
               className="imageContainerCart"
               src={item.image}
@@ -29,7 +30,7 @@ export default function Basket(props) {
               </button>
             </div>
 
-            <div className="col-2 text-right">
+            <div className="productPrice">
               {item.quantity} * ${item.price.toFixed(2)}
             </div>
           </div>
@@ -64,9 +65,7 @@ export default function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button onClick={() => alert("Implement Checkout!")}>
-                Checkout
-              </button>
+              <Link to={"/cart/checkout"}>Checkout</Link>
             </div>
           </>
         )}
