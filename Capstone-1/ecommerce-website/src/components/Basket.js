@@ -12,7 +12,7 @@ export default function Basket(props) {
   return (
     <aside className="cartItemsContainer">
       <div>
-        <h2 className="flexCart">Cart Items</h2>
+        <h2 className="flexCart">Shopping Cart</h2>
       </div>
 
       <div>
@@ -72,7 +72,7 @@ export default function Basket(props) {
               <Link className="checkout" to={"/cart/checkout"}>
                 <Form>
                   <div>
-                    <Button>Confirm Order</Button>
+                    <Button>Checkout</Button>
                   </div>
                 </Form>
               </Link>
