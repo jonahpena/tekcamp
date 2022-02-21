@@ -9,6 +9,7 @@ import Basket from "./components/Basket";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Checkout from "./Checkout";
+import Confirmation from "./Confirmation";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Alert } from "reactstrap";
 
@@ -58,6 +59,11 @@ function Home() {
           <Route exact path="/cart/checkout">
             <Basket onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
             <Checkout />
+          </Route>
+          <Route exact path="/cart/checkout/confirmation">
+            <Basket onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
+            <Checkout />
+            <Confirmation />
           </Route>
           <Route path="/product/:id" component={ProductDetails}>
             <ProductDetails onAdd={onAdd} propsData={myData} />
