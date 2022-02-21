@@ -9,6 +9,8 @@ import Basket from "./components/Basket";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Checkout from "./Checkout";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Alert } from "reactstrap";
 
 function Home() {
   const [myData, setMyData] = useState(JSONDATA);
@@ -43,6 +45,7 @@ function Home() {
   return (
     <div>
       <Router>
+        <div></div>
         <Header countCartItems={cartItems.length} />
 
         <Switch>

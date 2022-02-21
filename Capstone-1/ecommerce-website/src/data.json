@@ -5,6 +5,7 @@
     "serial": "21381",
     "price": 40,
     "quantity": 42,
+    "category": "clothing",
     "image": "/images/hoodie1.png"
   },
   {
@@ -13,6 +14,7 @@
     "serial": "21381",
     "price": 40,
     "quantity": 66,
+    "category": "clothing",
     "image": "/images/hoodie2.png"
   },
   {
@@ -21,6 +23,7 @@
     "serial": "21381",
     "price": 25,
     "quantity": 48,
+    "category": "clothing",
     "image": "/images/shirt1.png"
   },
   {
@@ -29,6 +32,7 @@
     "serial": "21381",
     "price": 25,
     "quantity": 24,
+    "category": "clothing",
     "image": "/images/shirt2.png"
   },
   {
@@ -37,6 +41,7 @@
     "serial": "21381",
     "price": 25,
     "quantity": 27,
+    "category": "clothing",
     "image": "/images/shirt3.png"
   },
   {
@@ -45,6 +50,7 @@
     "serial": "21381",
     "price": 25,
     "quantity": 22,
+    "category": "clothing",
     "image": "/images/cap.png"
   },
   {
@@ -53,6 +59,7 @@
     "serial": "21381",
     "price": 25,
     "quantity": 43,
+    "category": "clothing",
     "image": "/images/beanie.png"
   },
   {
@@ -61,6 +68,7 @@
     "serial": "21381",
     "price": 30,
     "quantity": 22,
+    "category": "vinyl",
     "image": "/images/vinyl1.png"
   },
   {
@@ -69,6 +77,7 @@
     "serial": "21681",
     "price": 30,
     "quantity": 34,
+    "category": "vinyl",
     "image": "/images/vinyl2.png"
   },
   {
@@ -77,6 +86,7 @@
     "serial": "21381",
     "price": 30,
     "quantity": 48,
+    "category": "vinyl",
     "image": "/images/vinyl3.png"
   }
 ]

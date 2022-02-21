@@ -9,7 +9,8 @@ function SearchProduct(props) {
   const { product, onAdd } = props;
   return (
     <div className="searchContainer">
-      <h1 className="merchandise">Merchandise</h1>
+      <h1 className="lDre">L.Dre Shop</h1>
+      <h1 className="merchandise"></h1>
       <form>
         <input
           onChange={(event) => {
@@ -41,9 +42,9 @@ function SearchProduct(props) {
               <Link className="productName" to={"/product/" + product.id}>
                 <p className="productName">{product.name}</p>
               </Link>
-              <Link className="productName" to={"/product/" + product.id}>
-                <p className="productPrice">{product.price}.00</p>
-              </Link>
+
+              <p className="productPrice">{product.price}.00</p>
+
               <button className="addButton" onClick={() => onAdd(product)}>
                 Add To Cart
               </button>

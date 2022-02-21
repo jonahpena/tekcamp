@@ -84,5 +84,14 @@ button {
 }
 
 .merchandise {
+  padding-top: 70px;
+  padding-bottom: 15px;
   font-family: condensed;
+}
+.lDre {
+  padding-top: 200px;
+
+  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  padding-bottom: 5px;
 }

@@ -1,3 +1,8 @@
+.formContainer {
+  margin-left: 200px;
+  padding-left: 200px;
+}
+
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -82,4 +87,8 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+
+.formContainer {
+  margin-left: 200px;
 }

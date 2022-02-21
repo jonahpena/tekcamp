@@ -1,4 +1,7 @@
 .badge {
+  font-size: 30px !important;
+}
+/* .badge {
   background-color: white;
   color: black;
   width: 5px;
@@ -10,8 +13,12 @@
   background: white;
   border-radius: 50%;
   line-height: 0px;
-}
+} */
 
 .NavContainer {
   display: hidden;
+}
+
+.homeButton {
+  font-family: "Pacifico", cursive;
 }
