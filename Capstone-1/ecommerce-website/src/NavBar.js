@@ -1,5 +1,5 @@
 import "./Stylesheets/NavBar.css";
-
+import Header from "./components/Header";
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -9,7 +9,6 @@ function NavBar() {
       <Link to={"/"}>
         <button className="homeButton">Home Button</button>
       </Link>
-      <button className="cartButton">0</button>
     </div>
   );
 }

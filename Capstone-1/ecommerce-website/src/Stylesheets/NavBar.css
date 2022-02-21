@@ -1,7 +1,7 @@
 .NavContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   background-color: black;
 }
@@ -19,7 +19,7 @@
 }
 
 .homeButton {
-  background-color: #4caf50; /* Green */
+  background-color: black; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;

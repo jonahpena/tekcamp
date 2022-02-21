@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 
 function SearchProduct(props) {
   const [searchTerm, setSearchTerm] = useState("");
+  const { product, onAdd } = props;
   return (
     <div className="searchContainer">
+      <h1 className="lDre">L.Dre Shop</h1>
+      <h1 className="merchandise"></h1>
       <form>
         <input
           onChange={(event) => {
@@ -18,22 +21,33 @@ function SearchProduct(props) {
           type="text"
         />
       </form>
-      {JSONDATA.filter((val) => {
+      {JSONDATA.filter((product) => {
+        /*         if (searchTerm !== product) {
+          return <div>hi</div>;
+        } */
         if (searchTerm == "") {
-          return val;
-        } else if (val.name.toLowerCase().includes(searchTerm.toLowerCase())) {
-          return val;
+          return product;
+        } else if (
+          product.name.toLowerCase().includes(searchTerm.toLowerCase())
+        ) {
+          return product;
         }
-      }).map((val, key) => {
+      }).map((product, key) => {
         return (
           <div className="product" key={key}>
             <div className="infoContainer">
-              <img className="imageContainer" src={val.image} />
-              <Link to={"/product/" + val.id}>
-                <p className="productName">{val.name}</p>
+              <Link className="productName" to={"/product/" + product.id}>
+                <img className="imageContainer" src={product.image} />
               </Link>
-              <p className="productPrice">{val.price}</p>
-              <button>Add to Cart</button>
+              <Link className="productName" to={"/product/" + product.id}>
+                <p className="productName">{product.name}</p>
+              </Link>
+
+              <p className="productPrice">{product.price}.00</p>
+
+              <button className="addButton" onClick={() => onAdd(product)}>
+                Add To Cart
+              </button>
             </div>
           </div>
         );

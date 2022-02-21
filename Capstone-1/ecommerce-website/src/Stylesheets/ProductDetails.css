@@ -1,0 +1,23 @@
+.productPrice {
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+}
+.productSerial {
+  font-size: 13px;
+  margin-bottom: 35px;
+  margin-top: 0px;
+}
+
+.doneShopping {
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.productDetails {
+  padding-top: 100px;
+}
+
+.productStock {
+  font-size: 10px;
+}

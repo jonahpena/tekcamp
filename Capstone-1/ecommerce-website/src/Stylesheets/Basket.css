@@ -1,0 +1,50 @@
+.productName {
+  font-size: 20px;
+  padding: 10px;
+}
+.productPrice {
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+.checkoutDetailsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addRemoveButtonContainer {
+  display: flex !important;
+  flex-direction: row !important;
+  padding-top: 20px;
+}
+
+.cartItemsContainer {
+  padding-top: 50px !important;
+}
+
+.flexCart {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.receiptInfo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  margin-left: 630px;
+  margin-right: 630px;
+  font-size: 16px;
+  text-decoration: none;
+}
