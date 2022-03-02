@@ -5,20 +5,18 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int input = 0;
         int total = 0;
-        int temp = (input + total);
+        System.out.println("Enter an Integer: ");
+
 
         while (true) {
-            System.out.println("Enter an Integer to Add: ");
-            input = scanner.nextInt();
-            total = input + input;
-            if(input >= 0 && input <= 10)
-            break;
-            {
-                System.out.println("Your total is " + total);
+            int userInput = Integer.valueOf(scanner.nextLine());
+            if (userInput != 0) {
+                total = total + userInput;
+                System.out.println("Enter another Integer to Add to the sum: ");
+            } else {
+                System.out.println("The sum is: " + total);
             }
         }
-
     }
 }
