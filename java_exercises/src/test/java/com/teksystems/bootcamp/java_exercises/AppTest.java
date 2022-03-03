@@ -1,8 +1,10 @@
 package com.teksystems.bootcamp.java_exercises;
 
-import static org.junit.Assert.assertTrue;
+import org.testng.annotations.Test;
 
-import org.junit.Test;
+import static org.testng.Assert.assertTrue;
+
+
 
 /**
  * Unit test for simple App.

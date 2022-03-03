@@ -9,14 +9,14 @@ public class Main {
         NumberAggregator aggregator = new NumberAggregator();
 
         int total = 0;
+        int userInput;
+
         System.out.println("Enter an Integer: ");
 
-        int userInput = scanner.nextInt();
-
         while (scanner.hasNextInt()) {
+            userInput = scanner.nextInt();
             total = aggregator.addNumber(userInput);
             System.out.println("Enter another Integer to Add to the sum: ");
-            userInput = scanner.nextInt();
         }
         System.out.println("The sum is: " + total);
     }
