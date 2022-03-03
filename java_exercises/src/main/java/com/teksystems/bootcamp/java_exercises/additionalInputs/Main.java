@@ -11,12 +11,12 @@ public class Main {
         int total = 0;
         System.out.println("Enter an Integer: ");
 
-        int userInput = Integer.valueOf(scanner.nextLine());
+        int userInput = scanner.nextInt();
 
-        while (userInput != 0) {
+        while (scanner.hasNextInt()) {
             total = aggregator.addNumber(userInput);
             System.out.println("Enter another Integer to Add to the sum: ");
-            userInput = Integer.valueOf(scanner.nextLine());
+            userInput = scanner.nextInt();
         }
         System.out.println("The sum is: " + total);
     }
