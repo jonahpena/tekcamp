@@ -1,8 +1,23 @@
 package com.teksystems.bootcamp.java_exercises.gridHopper;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int size = scanner.nextInt();
 
+        LocationPointer[][] viewBoard = BoardGenerator.createBoard(size, size);
+        LocationPointer finalLocation = BoardHopper.hop(viewBoard);
+            for(int i=0; i < viewBoard.length; i++) {
+                for (int j = 0; j < viewBoard.length; j++) {
+                    System.out.print("("+viewBoard[i][j].getTargetX() + " , " + viewBoard[i][j].getTargetY() + ")");
+                }
+                System.out.println(" ");
+            }
+        System.out.println(" ");
+        System.out.println(finalLocation.getTargetX() + " , " + finalLocation.getTargetY());
     }
 }
 

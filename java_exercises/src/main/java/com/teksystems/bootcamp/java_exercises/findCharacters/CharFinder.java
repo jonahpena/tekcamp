@@ -5,17 +5,19 @@ import java.util.List;
 
 public class CharFinder {
 
-    private static String charsToFind;
-    private static String stringToSearch;
-
     public static HashMap<Character, List<Integer>> findMatchPositions(String charsToFind, String stringToSearch) {
 
         HashMap<Character, List<Integer>> map = new HashMap<>();
 
         for (char c : charsToFind.toCharArray()) {
-
             ArrayList<Integer> locations = new ArrayList<>();
             map.put(c, locations);
+            for (int i = 0; i < stringToSearch.length(); i++) {
+            char input = stringToSearch.charAt(i);
+                if ( c == input) {
+                    locations.add(i);
+                }
+            }
         }
         return map;
     }
