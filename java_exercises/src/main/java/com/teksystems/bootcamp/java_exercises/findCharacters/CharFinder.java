@@ -1,15 +1,26 @@
 package com.teksystems.bootcamp.java_exercises.findCharacters;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class CharFinder {
-    public static void main(String[] args) {
 
-        System.out.println("Input a String: ");
+    private static String charsToFind;
+    private static String stringToSearch;
 
-        HashMap<String, String> findMatchPositions = new HashMap<>();
+    public static HashMap<Character, List<Integer>> findMatchPositions(String charsToFind, String stringToSearch) {
 
-        System.out.println("Input a character to search: ");
+        HashMap<Character, List<Integer>> map = new HashMap<>();
+
+        for (char c : charsToFind.toCharArray()) {
+
+            ArrayList<Integer> locations = new ArrayList<>();
+            map.put(c, locations);
+        }
+        return map;
     }
-
-
 }
+
+//CharFinder
+//    public static HashMap<Char, List<Int>> findMatchPositions(String charsToFind, String stringToSearch);
+//        returns a list of unique characters in the first argument and positions where those characters were found in the second argument
