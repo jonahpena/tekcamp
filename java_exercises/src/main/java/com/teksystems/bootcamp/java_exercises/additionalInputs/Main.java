@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        NumberAggregator aggregator = new NumberAggregator();
+        NumberAggregator aggregator = new NumberAggregator(0);
 
         int total = 0;
         int userInput;
