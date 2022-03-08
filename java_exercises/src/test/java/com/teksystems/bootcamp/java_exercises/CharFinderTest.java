@@ -21,7 +21,6 @@ public class CharFinderTest {
         HashMap<Character, List<Integer>> actual = new HashMap<>();
         actual.put('j' , Collections.singletonList(0));
 
-
         // act
 
         actual = CharFinder.findMatchPositions("j", "jonah");
