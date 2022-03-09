@@ -1,5 +1,7 @@
 package com.teksystems.bootcamp.java_exercises.expressionSolver;
 
+import com.teksystems.bootcamp.java_exercises.expressionSolver.Operations.Operation;
+
 public class Expression extends Term {
     private Term firstTerm;
     private Term secondTerm;
