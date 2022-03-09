@@ -28,4 +28,23 @@ public class CharFinderTest {
         // assert
         Assert.assertEquals(actual, expected);
     }
+    @Test
+    public void LocationShouldReturnAsOne(){
+        //arrange
+        HashMap<Character, List<Integer>> expected = new HashMap<>();
+        ArrayList<Integer> expectedLocations = new ArrayList<>();
+        expectedLocations.add(1);
+
+        expected.put('o', expectedLocations);
+
+        HashMap<Character, List<Integer>> actual = new HashMap<>();
+        actual.put('o' , Collections.singletonList(0));
+
+        // act
+
+        actual = CharFinder.findMatchPositions("o", "jonah");
+
+        // assert
+        Assert.assertEquals(actual, expected);
+    }
 }
