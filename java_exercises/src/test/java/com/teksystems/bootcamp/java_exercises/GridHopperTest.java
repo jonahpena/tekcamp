@@ -9,22 +9,18 @@ import org.testng.annotations.Test;
 public class GridHopperTest {
     @Test
     public static void getTargetXShouldReturnZero(){
-        //arrange
         LocationPointer[][] board = BoardGenerator.createBoard(2,5);
         LocationPointer actual = BoardHopper.hop(board);
         LocationPointer expected = new LocationPointer(0,1);
 
-        // assert
         Assert.assertEquals(actual.getTargetX(), expected.getTargetX());
     }
     @Test
     public static void getTargetYShouldReturnOne(){
-        //arrange
         LocationPointer[][] board = BoardGenerator.createBoard(2,5);
         LocationPointer actual = BoardHopper.hop(board);
         LocationPointer expected = new LocationPointer(0,1);
 
-        // assert
         Assert.assertEquals(actual.getTargetY(), expected.getTargetY());
     }
 }

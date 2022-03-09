@@ -9,9 +9,7 @@ public class NodeCreatorTest {
     @Test
     public void createNodeShouldReturnOne(){
         //arrange
-
-        Node expected = new ValueNode(2);
-
+        Node expected = new ValueNode(1);
         Node actual;
 
         // act

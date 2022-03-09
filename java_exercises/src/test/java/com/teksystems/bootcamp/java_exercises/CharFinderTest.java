@@ -33,16 +33,16 @@ public class CharFinderTest {
         //arrange
         HashMap<Character, List<Integer>> expected = new HashMap<>();
         ArrayList<Integer> expectedLocations = new ArrayList<>();
-        expectedLocations.add(1);
+        expectedLocations.add(4);
 
-        expected.put('o', expectedLocations);
+        expected.put('h', expectedLocations);
 
         HashMap<Character, List<Integer>> actual = new HashMap<>();
-        actual.put('o' , Collections.singletonList(0));
+        actual.put('h' , Collections.singletonList(0));
 
         // act
 
-        actual = CharFinder.findMatchPositions("o", "jonah");
+        actual = CharFinder.findMatchPositions("h", "jonah");
 
         // assert
         Assert.assertEquals(actual, expected);
