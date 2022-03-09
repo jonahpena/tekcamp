@@ -8,14 +8,29 @@ public class NumberAggregatorTest {
     @Test
     public void TwoPlusTwoShouldEqualFour(){
         //arrange
+        NumberAggregator aggregator = new NumberAggregator(0);
 
         int actual;
         int expected = 4;
 
-        NumberAggregator aggregator = new NumberAggregator(2);
+        // act
+        aggregator.addNumber(2);
+        actual = aggregator.addNumber(2);
+
+        // assert
+        Assert.assertEquals(actual, expected);
+    }
+    @Test
+    public void TwoPlusFiveShouldEqualSeven(){
+        //arrange
+        NumberAggregator aggregator = new NumberAggregator(0);
+
+        int actual;
+        int expected = 7;
 
         // act
-        actual = aggregator.addNumber(2);
+        aggregator.addNumber(2);
+        actual = aggregator.addNumber(5);
 
         // assert
         Assert.assertEquals(actual, expected);
