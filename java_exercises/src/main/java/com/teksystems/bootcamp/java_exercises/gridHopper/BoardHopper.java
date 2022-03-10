@@ -1,7 +1,7 @@
 package com.teksystems.bootcamp.java_exercises.gridHopper;
 
 public class BoardHopper {
-    static LocationPointer hop(LocationPointer[][] board) {
+    public static LocationPointer hop(LocationPointer[][] board) {
         int xLocation = 0;
         int yLocation = 0;
         int counter = 0;

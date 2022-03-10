@@ -8,7 +8,7 @@ public class ValueNode extends Node {
     }
 
     @Override
-    int getCountOfTwos() {
+    public int getCountOfTwos() {
         if (value == 2) {
             return 1;
         } else {
