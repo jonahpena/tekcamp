@@ -1,0 +1,39 @@
+package com.teksystems.bootcamp.capstone2;
+
+import java.util.Scanner;
+
+public class Input {
+
+    public static int getFirstInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        int choice = -1;
+        while (choice < 0 || choice > 4) {
+            try {
+                System.out.print("\nEnter your choice: ");
+                choice = Integer.parseInt(scanner.nextLine());
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid selection. Please try again.");
+            }
+        }
+        return choice;
+    }
+
+    public static int getSecondInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        int secondChoice = -1;
+        while (secondChoice < 0 || secondChoice > 2) {
+            try {
+                System.out.print("\nEnter your choice: ");
+                secondChoice = Integer.parseInt(scanner.nextLine());
+                Menu.addItemOrCompleteOrder(secondChoice);
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid selection. Please try again.");
+            }
+        }
+        return secondChoice;
+    }
+}
