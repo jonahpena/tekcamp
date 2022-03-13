@@ -1,6 +1,10 @@
 package com.teksystems.bootcamp.capstone2;
 
+import com.teksystems.bootcamp.capstone2.EditOrder.*;
 import com.teksystems.bootcamp.capstone2.Items.Entree;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Menu {
     boolean exit;
@@ -22,20 +26,24 @@ public class Menu {
                 System.out.println("\nThank you for using our application! Have a great day.");
                 break;
             case 1:
-                System.out.println("\nYou've chosen the Aloha Special for 12.99. \nWould you like to add another item?\n\nInput 1 for Yes\nInput 2 to complete your order");
-                EditOrder.addToOrder();
+                System.out.println("\nYou've chosen the Aloha Special for 12.99. \nChoose any toppings you'd like to add:?\n\nInput 1 for Yes\nInput 2 to complete your order");
+                Entree.ALOHA.getCost();
+                AddAlohaEntree.addToOrder();
                 Input.getSecondInput();
                 break;
             case 2:
                 System.out.println("\nYou've chosen the Ono Special for 12.99. \nWould you like to add another item?\n\nInput 1 for Yes\nInput 2 to complete your order");
+                AddOnoEntree.addToOrder();
                 Input.getSecondInput();
                 break;
             case 3:
                 System.out.println("\nYou've chosen the Ohana Special for 12.99. \nWould you like to add another item?\n\nInput 1 for Yes\nInput 2 to complete your order");
+                AddOhanaEntree.addToOrder();
                 Input.getSecondInput();
                 break;
             case 4:
                 System.out.println("\nYou've chosen the Mahalo Special for 12.99. \nWould you like to add another item?\n\nInput 1 for Yes\nInput 2 to complete your order");
+                AddMahaloEntree.addToOrder();
                 Input.getSecondInput();
                 break;
         }
@@ -56,6 +64,7 @@ public class Menu {
             case 2:
                 exit = true;
                 System.out.println("\nOrder Complete. Find your reciept below");
+                System.out.println(EditOrder.getEntreeList());
                 Receipt.printReceipt();
                 break;
 
