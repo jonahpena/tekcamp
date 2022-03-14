@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Input {
 
-    public static int getFirstInput() {
+    public static int getEntreeInput() {
         Scanner scanner = new Scanner(System.in);
 
         int choice = -1;
-        while (choice < 0 || choice > 4) {
+        while (choice < 0 || choice > 8) {
             try {
                 System.out.print("\nEnter your choice: ");
                 choice = Integer.parseInt(scanner.nextLine());
@@ -24,7 +24,7 @@ public class Input {
         Scanner scanner = new Scanner(System.in);
 
         int secondChoice = -1;
-        while (secondChoice < 0 || secondChoice > 2) {
+        while (secondChoice < 0 || secondChoice > 8) {
             try {
                 System.out.print("\nEnter your choice: ");
                 secondChoice = Integer.parseInt(scanner.nextLine());
@@ -41,7 +41,7 @@ public class Input {
         Scanner scanner = new Scanner(System.in);
 
         int thirdChoice = -1;
-        while (thirdChoice < 0 || thirdChoice > 2) {
+        while (thirdChoice < 0 || thirdChoice > 8) {
             try {
                 System.out.print("\nEnter your choice: ");
                 thirdChoice = Integer.parseInt(scanner.nextLine());
@@ -53,11 +53,11 @@ public class Input {
         }
         return thirdChoice;
     }
-    public static int getFourthInput() {
+    public static int getSideInput() {
         Scanner scanner = new Scanner(System.in);
 
         int fourthChoice = -1;
-        while (fourthChoice < 0 || fourthChoice > 2) {
+        while (fourthChoice < 0 || fourthChoice > 8) {
             try {
                 System.out.print("\nEnter your choice: ");
                 fourthChoice = Integer.parseInt(scanner.nextLine());
@@ -68,22 +68,5 @@ public class Input {
             }
         }
         return fourthChoice;
-    }
-    public static int getFifthInput() {
-        Scanner scanner = new Scanner(System.in);
-
-        int fifthChoice = -1;
-        while (fifthChoice < 0 || fifthChoice > 2) {
-            try {
-                System.out.print("\nEnter your choice: ");
-                fifthChoice = Integer.parseInt(scanner.nextLine());
-                Menu.addItemOrCompleteOrder(fifthChoice);
-                Menu.chooseTopping(fifthChoice);
-
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid selection. Please try again.");
-            }
-        }
-        return fifthChoice;
     }
 }

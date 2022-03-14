@@ -23,9 +23,9 @@ public class Menu {
 
     public void generateWelcome() {
         UserInterface.printWelcome();
-        UserInterface.printMenu();
+        UserInterface.printEntreeMenu();
         while (!exit) {
-            int choice = Input.getFirstInput();
+            int choice = Input.getEntreeInput();
             chooseEntree(choice);
 
         }
@@ -66,6 +66,17 @@ public class Menu {
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getToppingInput();
                 break;
+            case 5:
+                UserInterface.printDrinkMenu();
+                DisplayCurrentOrder.displayCurrentOrder();
+                Input.getDrinkInput();
+                break;
+            case 6:
+                UserInterface.printSideMenu();
+                DisplayCurrentOrder.displayCurrentOrder();
+                Input.getSideInput();
+                break;
+
         }
     }
 
@@ -111,10 +122,18 @@ public class Menu {
                 Input.getDrinkInput();
                 break;
             case 6:
-                System.out.println("\nYou've added Wasabi to your meal. \nUse the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getToppingInput();
+                Input.getSideInput();
+                break;
+            case 7:
+                DisplayCurrentOrder.displayCurrentOrder();
+                Input.getEntreeInput();
+                break;
+            case 8:
+                Receipt.printReceipt();
+                DisplayCurrentOrder.displayCurrentOrder();
+                Input.getEntreeInput();
                 break;
         }
     }
@@ -131,39 +150,47 @@ public class Menu {
                 UserInterface.printSideMenu();
                 AddSprite.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getFourthInput();
+                Input.getSideInput();
                 break;
             case 2:
                 System.out.println("\nYou've added a Coke to your meal. \nUse the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddCoke.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getFourthInput();
+                Input.getSideInput();
                 break;
             case 3:
                 System.out.println("\nYou've added a Root-Beer to your meal. \nUse the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddRootBeer.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getFourthInput();
+                Input.getSideInput();
                 break;
             case 4:
                 System.out.println("\nYou've added a Water to your meal. \nUse the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddWater.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getFourthInput();
+                Input.getSideInput();
                 break;
             case 5:
                 UserInterface.printSideMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getDrinkInput();
+                Input.getSideInput();
                 break;
             case 6:
-                System.out.println("\nYou've added Wasabi to your meal. \nUse the menu below to continue with your order.");
-                UserInterface.printSideMenu();
+                UserInterface.printToppingMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getToppingInput();
+                break;
+            case 7:
+                UserInterface.printEntreeMenu();
+                DisplayCurrentOrder.displayCurrentOrder();
+                Input.getEntreeInput();
+                break;
+            case 8:
+                DisplayCurrentOrder.displayCurrentOrder();
+                Receipt.printReceipt();
                 break;
         }
     }
@@ -180,63 +207,48 @@ public class Menu {
                 UserInterface.printSideMenu();
                 AddEdamame.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getFourthInput();
+                Input.getSideInput();
                 break;
             case 2:
                 System.out.println("\nYou've added a Crab ball to your meal. \nUse the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddCrabBall.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getFourthInput();
+                Input.getSideInput();
                 break;
             case 3:
                 System.out.println("\nYou've added a side of Spam Musubi to your meal. \nUse the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddSpamMusubi.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getFourthInput();
+                Input.getSideInput();
                 break;
             case 4:
                 System.out.println("\nYou've added a side of Nori to your meal. \nUse the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddNori.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getFourthInput();
+                Input.getSideInput();
                 break;
             case 5:
+                UserInterface.printToppingMenu();
+                DisplayCurrentOrder.displayCurrentOrder();
+                Input.getToppingInput();
+                break;
+            case 6:
                 UserInterface.printDrinkMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getDrinkInput();
                 break;
-            case 6:
-                System.out.println("\nYou've added Wasabi to your meal. \nUse the menu below to continue with your order.");
-                UserInterface.printSideMenu();
+            case 7:
+                UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getToppingInput();
+                Input.getEntreeInput();
                 break;
-        }
-    }
-
-
-
-    static void addItemOrCompleteOrder(int secondChoice) {
-        boolean exit;
-        switch (secondChoice) {
-            case 0:
-                exit = true;
-                System.out.println("\nThanks for visiting the Poke Palace! We hope to see you again soon!");
-                break;
-            case 1:
-                System.out.println("\nYou've chosen to add another item. Make your selection with the Menu below:");
-                UserInterface.printMenu();
-                break;
-            case 2:
-                exit = true;
-                System.out.println("\nOrder Complete. Find your reciept below");
+            case 8:
                 DisplayCurrentOrder.displayCurrentOrder();
                 Receipt.printReceipt();
                 break;
-
         }
     }
 
