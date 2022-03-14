@@ -1,9 +1,7 @@
-package com.teksystems.bootcamp.capstone2.EditOrder;
+package com.teksystems.bootcamp.capstone2.EditOrder.AddEntree;
 
+import com.teksystems.bootcamp.capstone2.EditOrder.EditOrder;
 import com.teksystems.bootcamp.capstone2.Items.Entree;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class AddAlohaEntree extends EditOrder {
     public static void addToOrder() {

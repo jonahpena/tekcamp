@@ -28,12 +28,64 @@ public class Input {
             try {
                 System.out.print("\nEnter your choice: ");
                 secondChoice = Integer.parseInt(scanner.nextLine());
-                Menu.addItemOrCompleteOrder(secondChoice);
+                Menu.chooseSecondMenuItem(secondChoice);
 
             } catch (NumberFormatException e) {
                 System.out.println("Invalid selection. Please try again.");
             }
         }
         return secondChoice;
+    }
+
+    public static int getThirdInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        int thirdChoice = -1;
+        while (thirdChoice < 0 || thirdChoice > 2) {
+            try {
+                System.out.print("\nEnter your choice: ");
+                thirdChoice = Integer.parseInt(scanner.nextLine());
+                Menu.addItemOrCompleteOrder(thirdChoice);
+                Menu.chooseSecondMenuItem(thirdChoice);
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid selection. Please try again.");
+            }
+        }
+        return thirdChoice;
+    }
+    public static int getFourthInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        int fourthChoice = -1;
+        while (fourthChoice < 0 || fourthChoice > 2) {
+            try {
+                System.out.print("\nEnter your choice: ");
+                fourthChoice = Integer.parseInt(scanner.nextLine());
+                Menu.addItemOrCompleteOrder(fourthChoice);
+                Menu.chooseSecondMenuItem(fourthChoice);
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid selection. Please try again.");
+            }
+        }
+        return fourthChoice;
+    }
+    public static int getFifthInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        int fifthChoice = -1;
+        while (fifthChoice < 0 || fifthChoice > 2) {
+            try {
+                System.out.print("\nEnter your choice: ");
+                fifthChoice = Integer.parseInt(scanner.nextLine());
+                Menu.addItemOrCompleteOrder(fifthChoice);
+                Menu.chooseSecondMenuItem(fifthChoice);
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid selection. Please try again.");
+            }
+        }
+        return fifthChoice;
     }
 }
