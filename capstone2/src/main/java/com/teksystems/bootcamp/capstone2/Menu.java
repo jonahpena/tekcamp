@@ -1,22 +1,24 @@
 package com.teksystems.bootcamp.capstone2;
 
-import com.teksystems.bootcamp.capstone2.EditOrder.*;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddDrink.AddCoke;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddDrink.AddRootBeer;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddDrink.AddSprite;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddDrink.AddWater;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddEntree.AddAlohaEntree;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddEntree.AddMahaloEntree;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddEntree.AddOhanaEntree;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddEntree.AddOnoEntree;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddSide.AddCrabBall;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddSide.AddEdamame;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddSide.AddNori;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddSide.AddSpamMusubi;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddTopping.AddFurikakeTopping;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddTopping.AddGingerTopping;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddTopping.AddMasagoTopping;
-import com.teksystems.bootcamp.capstone2.EditOrder.AddTopping.AddWasabiTopping;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddDrink.AddCoke;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddDrink.AddRootBeer;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddDrink.AddSprite;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddDrink.AddWater;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddEntree.AddAlohaEntree;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddEntree.AddMahaloEntree;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddEntree.AddOhanaEntree;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddEntree.AddOnoEntree;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddSide.AddCrabBall;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddSide.AddEdamame;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddSide.AddNori;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddSide.AddSpamMusubi;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddTopping.AddFurikakeTopping;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddTopping.AddGingerTopping;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddTopping.AddMasagoTopping;
+import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddTopping.AddWasabiTopping;
+import com.teksystems.bootcamp.capstone2.UserInputs.Input;
+import com.teksystems.bootcamp.capstone2.UserInterface.DisplayCurrentOrder;
+import com.teksystems.bootcamp.capstone2.UserInterface.UserInterface;
 
 public class Menu {
     boolean exit;
@@ -39,10 +41,9 @@ public class Menu {
                 break;
             case 1:
                 System.out.println("\nYou've chosen the Aloha Special for 12.99.");
-//                Entree.ALOHA.getCost();
-                UserInterface.printToppingMenu();
                 AddAlohaEntree.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
+                UserInterface.printToppingMenu();
                 Input.getToppingInput();
                 break;
             case 2:
@@ -80,8 +81,7 @@ public class Menu {
         }
     }
 
-
-    static void chooseTopping(int choice) {
+    public static void chooseTopping(int choice) {
         boolean exit;
         switch (choice) {
             case 0:
@@ -128,6 +128,7 @@ public class Menu {
                 break;
             case 7:
                 DisplayCurrentOrder.displayCurrentOrder();
+                UserInterface.printEntreeMenu();
                 Input.getEntreeInput();
                 break;
             case 8:
@@ -138,7 +139,7 @@ public class Menu {
         }
     }
 
-    static void chooseDrink(int choice) {
+    public static void chooseDrink(int choice) {
         boolean exit;
         switch (choice) {
             case 0:
@@ -195,7 +196,7 @@ public class Menu {
         }
     }
 
-    static void chooseSide(int choice) {
+    public static void chooseSide(int choice) {
         boolean exit;
         switch (choice) {
             case 0:
