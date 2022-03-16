@@ -21,10 +21,40 @@ public class ReceiptValues {
         }
         double taxedSum = 1.07 * sum;
         double roundedSum = Math.round(taxedSum*100.0)/100.0;
+        System.out.println("|  Total: $" + roundedSum + "              |");
+    }
 
+    public static void displaySubtotalOfOrder() {
+        List<MenuAddOns> entreeList;
+        entreeList = EditOrder.getEntreeList();
+        double sum = 0;
 
-//        System.out.println("|  Tax: $" + taxedSum);
-        System.out.println("|  Total: $" + roundedSum);
+        List<Double> menuItemPrice = new ArrayList<>();
+
+        for (MenuAddOns item : entreeList) {
+            sum += item.getCost();
+            menuItemPrice.add(item.getCost());
+        }
+
+        double roundedSum = Math.round(sum*100.0)/100.0;
+        System.out.println("|  Subtotal: $" + roundedSum + "           |");
+    }
+
+    public static void displayTaxOfOrder() {
+        List<MenuAddOns> entreeList;
+        entreeList = EditOrder.getEntreeList();
+        double sum = 0;
+
+        List<Double> menuItemPrice = new ArrayList<>();
+
+        for (MenuAddOns item : entreeList) {
+            sum += item.getCost();
+            menuItemPrice.add(item.getCost());
+        }
+        double taxedSum = (1.0625 * sum) - sum;
+
+        double roundedSum = Math.round(taxedSum*100.0)/100.0;
+        System.out.println("|  Tax: $" + roundedSum  + "                 |");
     }
 
     public static void displaySelectedMenuItemNames() {
