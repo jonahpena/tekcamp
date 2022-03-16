@@ -1,26 +1,52 @@
 package com.teksystems.bootcamp.capstone2.EditOrder;
 
 import com.teksystems.bootcamp.capstone2.Items.MenuAddOns;
-import com.teksystems.bootcamp.capstone2.TaxCalculator;
+import com.teksystems.bootcamp.capstone2.Recepit.ReceiptValues;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Orders {
     private List<MenuAddOns> entrees = new ArrayList<>();
-    private double tax = TaxCalculator.calculateTax(this.getSum());
     private double sum = 0;
     private int orderNumber = 1;
 
     public Orders() {
+    }
 
+    public void newOrder(Orders order) {
+        setOrderNumber(orderNumber++);
+        order.entrees.clear();
+        order.setSum(0);
+    }
+
+    public void addToEntrees(MenuAddOns item, Orders order) {
+        order.entrees.add(item);
+    }
+
+    public void removeFromEntrees(MenuAddOns item, Orders order) {
+        order.entrees.remove(item);
+    }
+
+    public void printReceipt(Orders order) {
+        System.out.println("\n+-----------------------------+");
+        System.out.println("|     Jonah's Poke Palace     |");
+        System.out.println("|          Order#:" + this.getOrderNumber() + "           |");
+        System.out.println("|                             |");
+        ReceiptValues.displaySelectedMenuItemNames(this);
+        System.out.println("|                             |");
+        ReceiptValues.displayCurrentSubtotalOfOrder(this);
+        System.out.println("|                             |");
+        ReceiptValues.displayTaxOfOrder(this);
+        ReceiptValues.displaySumOfOrder(this);
+        System.out.println("|                             |");
+        System.out.println("+-----------------------------+");
     }
 
     @Override
     public String toString() {
         return "Orders{" +
                 "entrees=" + entrees +
-                ", tax=" + tax +
                 ", sum=" + sum +
                 ", orderNumber=" + orderNumber +
                 '}';
@@ -32,14 +58,6 @@ public class Orders {
 
     public void setEntrees(List<MenuAddOns> entrees) {
         this.entrees = entrees;
-    }
-
-    public double getTax() {
-        return tax;
-    }
-
-    public void setTax(double tax) {
-        this.tax = tax;
     }
 
     public double getSum() {

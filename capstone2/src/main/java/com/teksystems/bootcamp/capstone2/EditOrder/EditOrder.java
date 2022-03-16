@@ -6,17 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class EditOrder {
-    public static List<MenuAddOns> entreeList = new ArrayList<>();
-
-    public static List<MenuAddOns> pastOrderList = new ArrayList<>();
-
-    public static void setEntreeList(List<MenuAddOns> entreeList) {
-        EditOrder.entreeList = entreeList;
+    public static void addToOrder(MenuAddOns item, Orders order){
+        Double itemCost = item.getCost();
+        order.addToEntrees(item, order);
+        order.setSum(order.getSum() + itemCost);
     }
 
-    public static List<MenuAddOns> getEntreeList() {
-        return entreeList;
+    public static void removeFromOrder(MenuAddOns item, Orders order){
+        Double itemCost = item.getCost();
+        order.removeFromEntrees(item, order);
+        order.setSum(order.getSum() - itemCost);
     }
-
 }
 
