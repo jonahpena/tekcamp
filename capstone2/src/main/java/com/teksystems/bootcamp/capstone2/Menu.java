@@ -42,8 +42,8 @@ public class Menu {
             case 1:
                 System.out.println("\nYou've chosen the Aloha Special for 12.99.");
                 AddAlohaEntree.addToOrder();
-                DisplayCurrentOrder.displayCurrentOrder();
                 UserInterface.printToppingMenu();
+                DisplayCurrentOrder.displayCurrentOrder();
                 Input.getToppingInput();
                 break;
             case 2:
@@ -135,6 +135,7 @@ public class Menu {
                 Receipt.printReceipt();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getEntreeInput();
+
                 break;
         }
     }

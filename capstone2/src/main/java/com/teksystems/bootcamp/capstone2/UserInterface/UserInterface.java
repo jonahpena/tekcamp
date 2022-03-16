@@ -19,6 +19,8 @@ public class UserInterface {
     }
 
     public static void printToppingMenu() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("\nChoose any toppings you'd like to add:");
         System.out.println("\n1. Furikake");
         System.out.println("2. Ginger");

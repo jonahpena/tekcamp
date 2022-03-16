@@ -8,6 +8,8 @@ import java.util.List;
 public abstract class EditOrder {
     public static List<MenuAddOns> entreeList = new ArrayList<>();
 
+//public static com.teksystems.bootcamp.capstone2.EditOrder.CalculateOrderTotal CalculateOrderTotal;
+
     public static void setEntreeList(List<MenuAddOns> entreeList) {
         EditOrder.entreeList = entreeList;
     }
@@ -15,5 +17,6 @@ public abstract class EditOrder {
     public static List<MenuAddOns> getEntreeList() {
         return entreeList;
     }
+
 }
 

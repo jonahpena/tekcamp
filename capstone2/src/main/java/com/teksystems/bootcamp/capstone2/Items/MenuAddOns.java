@@ -20,10 +20,16 @@ public enum MenuAddOns {
     WATER("Water", 0.00),
 
     //Sides
-    EDAMAME("Edamame", 4.99),
-    CRABBALL("Crab Ball", 1.99),
-    SPAMMUSUBI("Spam Musubi", 1.99),
-    NORI("Nori", 0.99);
+    EDAMAME("Edamame", 2.99),
+    CRABBALL("Crab Ball", 2.99),
+    SPAMMUSUBI("Spam Musubi", 2.99),
+    NORI("Nori", 2.99),
+
+    //Combo Meal
+    ALOHACOMBO("Aloha Combo Meal", 16.99),
+    ONOCOMBO("Ono Combo Meal", 16.99),
+    OHANACOMBO("Ohana Combo Meal", 16.99),
+    MAHALOCOMBO("Mahalo Combo Meal", 16.99);
 
     private double cost;
     private String name;
