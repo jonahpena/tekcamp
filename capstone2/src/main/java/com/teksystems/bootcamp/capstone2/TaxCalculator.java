@@ -20,5 +20,4 @@ public class TaxCalculator {
 
         return "Thank you for your order! The total cost is: " + doubleFormatted;
     }
-
 }
