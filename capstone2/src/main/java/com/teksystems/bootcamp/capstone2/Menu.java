@@ -16,6 +16,7 @@ import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddTopping.AddFur
 import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddTopping.AddGingerTopping;
 import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddTopping.AddMasagoTopping;
 import com.teksystems.bootcamp.capstone2.EditOrder.AddMenuItem.AddTopping.AddWasabiTopping;
+import com.teksystems.bootcamp.capstone2.EditOrder.Orders;
 import com.teksystems.bootcamp.capstone2.Recepit.Receipt;
 import com.teksystems.bootcamp.capstone2.UserInputs.Input;
 import com.teksystems.bootcamp.capstone2.UserInterface.DisplayCurrentOrder;
@@ -259,14 +260,26 @@ public class Menu {
             case 0:
                 exit = true;
                 System.out.println("\nThank you for choosing The Poke Palace today! Have a great day.");
+
                 break;
             case 1:
                 System.out.println("\nYou've chosen to add an additional order! \n\nUse the menu below to begin placing another order.");
                 UserInterface.printEntreeMenu();
-//                Input.getEntreeInput();
                 break;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -370,6 +383,7 @@ public class Menu {
             case 8:
                 Receipt.printReceipt();
                 UserInterface.additionalOrderOptionsMenu();
+
                 Input.getAdditionalOrderInput();
                 break;
         }
