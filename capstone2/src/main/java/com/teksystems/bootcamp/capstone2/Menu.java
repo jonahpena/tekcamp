@@ -38,7 +38,7 @@ public class Menu {
         switch (choice) {
             case 0:
                 exit = true;
-                System.out.println("\nThank you for using our application! Have a great day.");
+                System.out.println("\nThank you for choosing The Poke Palace today! Have a great day.");
                 break;
             case 1:
                 System.out.println("\nYou've chosen the Aloha Special for 12.99.");
@@ -87,31 +87,31 @@ public class Menu {
         switch (choice) {
             case 0:
                 exit = true;
-                System.out.println("\nThank you for using our application! Have a great day.");
+                System.out.println("\nThank you for choosing The Poke Palace today! Have a great day.");
                 break;
             case 1:
-                System.out.println("\nYou've added Furikake to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added Furikake to your meal. Use the menu below to continue with your order.");
                 AddFurikakeTopping.addToOrder();
                 UserInterface.printToppingMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getToppingInput();
                 break;
             case 2:
-                System.out.println("\nYou've added Ginger to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added Ginger to your meal. Use the menu below to continue with your order.");
                 AddGingerTopping.addToOrder();
                 UserInterface.printToppingMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getToppingInput();
                 break;
             case 3:
-                System.out.println("\nYou've added Masago to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added Masago to your meal. Use the menu below to continue with your order.");
                 AddMasagoTopping.addToOrder();
                 UserInterface.printToppingMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getToppingInput();
                 break;
             case 4:
-                System.out.println("\nYou've added Wasabi to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added Wasabi to your meal. Use the menu below to continue with your order.");
                 AddWasabiTopping.addToOrder();
                 UserInterface.printToppingMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
@@ -128,13 +128,13 @@ public class Menu {
                 Input.getSideInput();
                 break;
             case 7:
-                DisplayCurrentOrder.displayCurrentOrder();
                 UserInterface.printEntreeMenu();
-                Input.getEntreeInput();
+                DisplayCurrentOrder.displayCurrentOrder();
                 break;
             case 8:
                 Receipt.printReceipt();
-                Input.getEntreeInput();
+                UserInterface.additionalOrderOptionsMenu();
+                Input.getAdditionalOrderInput();
                 break;
         }
     }
@@ -144,31 +144,31 @@ public class Menu {
         switch (choice) {
             case 0:
                 exit = true;
-                System.out.println("\nThank you for using our application! Have a great day.");
+                System.out.println("\nThank you for choosing The Poke Palace today! Have a great day.");
                 break;
             case 1:
-                System.out.println("\nYou've added a Sprite to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added a Sprite to your meal. Use the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddSprite.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getSideInput();
                 break;
             case 2:
-                System.out.println("\nYou've added a Coke to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added a Coke to your meal. Use the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddCoke.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getSideInput();
                 break;
             case 3:
-                System.out.println("\nYou've added a Root-Beer to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added a Root-Beer to your meal. Use the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddRootBeer.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
                 Input.getSideInput();
                 break;
             case 4:
-                System.out.println("\nYou've added a Water to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added a Water to your meal. Use the menu below to continue with your order.");
                 UserInterface.printSideMenu();
                 AddWater.addToOrder();
                 DisplayCurrentOrder.displayCurrentOrder();
@@ -186,12 +186,12 @@ public class Menu {
                 break;
             case 7:
                 UserInterface.printEntreeMenu();
-                DisplayCurrentOrder.displayCurrentOrder();
-                Input.getEntreeInput();
+                DisplayCurrentOrder.displayCurrentOrder();;
                 break;
             case 8:
-                DisplayCurrentOrder.displayCurrentOrder();
                 Receipt.printReceipt();
+                UserInterface.additionalOrderOptionsMenu();
+                Input.getAdditionalOrderInput();
                 break;
         }
     }
@@ -201,7 +201,7 @@ public class Menu {
         switch (choice) {
             case 0:
                 exit = true;
-                System.out.println("\nThank you for using our application! Have a great day.");
+                System.out.println("\nThank you for choosing The Poke Palace today! Have a great day.");
                 break;
             case 1:
                 System.out.println("\nYou've added a side of Edamame to your meal. \nUse the menu below to continue with your order.");
@@ -244,11 +244,11 @@ public class Menu {
             case 7:
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder();
-                Input.getEntreeInput();
                 break;
             case 8:
-                DisplayCurrentOrder.displayCurrentOrder();
                 Receipt.printReceipt();
+                UserInterface.additionalOrderOptionsMenu();
+                Input.getAdditionalOrderInput();
                 break;
         }
     }
@@ -258,30 +258,13 @@ public class Menu {
         switch (choice) {
             case 0:
                 exit = true;
-                System.out.println("\nThank you for using our application! Have a great day.");
+                System.out.println("\nThank you for choosing The Poke Palace today! Have a great day.");
                 break;
             case 1:
-                System.out.println("\nYou've added a side of Edamame to your meal. \nUse the menu below to continue with your order.");
-                UserInterface.printSideMenu();
-                AddEdamame.addToOrder();
-                DisplayCurrentOrder.displayCurrentOrder();
-                Input.getSideInput();
+                System.out.println("\nYou've chosen to add an additional order! \n\nUse the menu below to begin placing another order.");
+                UserInterface.printEntreeMenu();
+//                Input.getEntreeInput();
                 break;
-            case 2:
-                System.out.println("\nYou've added a Crab ball to your meal. \nUse the menu below to continue with your order.");
-                UserInterface.printSideMenu();
-                AddCrabBall.addToOrder();
-                DisplayCurrentOrder.displayCurrentOrder();
-                Input.getSideInput();
-                break;
-            case 3:
-                System.out.println("\nYou've added a side of Spam Musubi to your meal. \nUse the menu below to continue with your order.");
-                UserInterface.printSideMenu();
-                AddSpamMusubi.addToOrder();
-                DisplayCurrentOrder.displayCurrentOrder();
-                Input.getSideInput();
-                break;
-
         }
     }
 

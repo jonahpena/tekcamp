@@ -72,4 +72,21 @@ public class Input {
         }
         return fourthChoice;
     }
+
+    public static int getAdditionalOrderInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        int additionalOrderChoice = -1;
+        while (additionalOrderChoice < 0 || additionalOrderChoice > 8) {
+            try {
+                System.out.print("\nEnter your choice: ");
+                additionalOrderChoice = Integer.parseInt(scanner.nextLine());
+                Menu.AdditionalOrderOptions(additionalOrderChoice);
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid selection. Please try again.");
+            }
+        }
+        return additionalOrderChoice;
+    }
 }

@@ -40,6 +40,22 @@ public class ReceiptValues {
         System.out.println("|  Subtotal: $" + roundedSum + "           |");
     }
 
+    public static void displayCurrentSubtotalOfOrder() {
+        List<MenuAddOns> entreeList;
+        entreeList = EditOrder.getEntreeList();
+        double sum = 0;
+
+        List<Double> menuItemPrice = new ArrayList<>();
+
+        for (MenuAddOns item : entreeList) {
+            sum += item.getCost();
+            menuItemPrice.add(item.getCost());
+        }
+
+        double roundedSum = Math.round(sum*100.0)/100.0;
+        System.out.println("Subtotal: $" + roundedSum);
+    }
+
     public static void displayTaxOfOrder() {
         List<MenuAddOns> entreeList;
         entreeList = EditOrder.getEntreeList();

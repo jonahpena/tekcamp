@@ -2,16 +2,16 @@ package com.teksystems.bootcamp.capstone2.Items;
 
 public enum MenuAddOns {
 //    //Entree
-    ALOHA("Aloha ---------- $12.99    |", 12.99),
+    ALOHA("Aloha ----------- $12.99   |", 12.99),
     ONO("Ono ------------- $12.99   |", 12.99),
-    OHANA("Ohana  --------- $12.99   |", 12.99),
+    OHANA("Ohana  ---------- $12.99   |", 12.99),
     MAHALO("Mahalo  --------- $12.99   |", 12.99),
 
     //Toppings
-    FURIKAKE("Furikake  ------ $0.20     |", .20),
-    MASAGO("Masago  -------- $0.20     |", .20),
-    GINGER("Ginger --------- $0.20     |", .20),
-    WASABI("Wasabi --------- $0.20     |", .20),
+    FURIKAKE("Furikake  ------- $0.20    |", .20),
+    MASAGO("Masago  --------- $0.20    |", .20),
+    GINGER("Ginger ---------- $0.20    |", .20),
+    WASABI("Wasabi ---------- $0.20    |", .20),
 
     //Drinks
     SPRITE("Sprite ---------- $1.99    |", 1.99),
