@@ -1,4 +1,4 @@
-package com.teksystems.bootcamp.capstone2.Items;
+package com.teksystems.bootcamp.capstone2;
 
 public enum MenuAddOns {
 //    //Entree

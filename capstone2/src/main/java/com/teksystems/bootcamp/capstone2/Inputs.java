@@ -1,4 +1,4 @@
-package com.teksystems.bootcamp.capstone2.UserInputs;
+package com.teksystems.bootcamp.capstone2;
 
 import com.teksystems.bootcamp.capstone2.Menu;
 
@@ -71,6 +71,23 @@ public class Inputs {
             }
         }
         return fourthChoice;
+    }
+
+    public static int getComboInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        int comboChoice = -1;
+        while (comboChoice < 0 || comboChoice > 8) {
+            try {
+                System.out.print("\nEnter your choice: ");
+                comboChoice = Integer.parseInt(scanner.nextLine());
+                Menu.chooseCombo(comboChoice);
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid selection. Please try again.");
+            }
+        }
+        return comboChoice;
     }
 
     public static int getAdditionalOrderInput() {

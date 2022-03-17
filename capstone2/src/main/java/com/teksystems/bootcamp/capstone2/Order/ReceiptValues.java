@@ -1,6 +1,6 @@
 package com.teksystems.bootcamp.capstone2.Order;
 
-import com.teksystems.bootcamp.capstone2.Items.MenuAddOns;
+import com.teksystems.bootcamp.capstone2.MenuAddOns;
 import com.teksystems.bootcamp.capstone2.TaxCalculator;
 
 import java.util.ArrayList;
@@ -41,4 +41,5 @@ public class ReceiptValues {
         }
         for (String item : menuItemNames) { System.out.println("|  " + item); }
     }
+
 }

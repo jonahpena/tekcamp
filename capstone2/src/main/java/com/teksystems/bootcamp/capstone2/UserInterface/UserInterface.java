@@ -13,8 +13,9 @@ public class UserInterface {
         System.out.println("2. Ono Special");
         System.out.println("3. Ohana Special");
         System.out.println("4. Mahalo Special");
-        System.out.println("5. Choose a Drink");
-        System.out.println("6. Choose a Side");
+        System.out.println("5. See Combo Menu");
+        System.out.println("6. Choose a Drink");
+        System.out.println("7. Choose a Side");
         System.out.println("0. Exit");
     }
     public static void printToppingMenu() {
@@ -47,6 +48,19 @@ public class UserInterface {
         System.out.println("2. Crab ball");
         System.out.println("3. Spam Musubi");
         System.out.println("4. Nori");
+        System.out.println("5. Go back to add more toppings");
+        System.out.println("6. Go back to add another drink");
+        System.out.println("7. Add another Entree");
+        System.out.println("8. Complete your Order");
+        System.out.println("0. Exit");
+    }
+
+    public static void printComboMenu() {
+        System.out.println("\nChoose a pre-defined Combo or build your own!");
+        System.out.println("1. Aloha Combo - \n Our Aloha Combo contains: The Aloha Special, with a side of Edamame, and a cup of Ice water ");
+        System.out.println("2. Ono Combo");
+        System.out.println("3. Ohana Combo");
+        System.out.println("4. Mahalo Combo");
         System.out.println("5. Go back to add more toppings");
         System.out.println("6. Go back to add another drink");
         System.out.println("7. Add another Entree");
