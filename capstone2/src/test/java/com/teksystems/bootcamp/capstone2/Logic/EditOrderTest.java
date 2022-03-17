@@ -1,7 +1,7 @@
-package com.teksystems.bootcamp.capstone2.EditOrder;
+package com.teksystems.bootcamp.capstone2.Logic;
 
-import com.teksystems.bootcamp.capstone2.Menu.MenuAddOns;
-import com.teksystems.bootcamp.capstone2.Order.EditOrder;
+import com.teksystems.bootcamp.capstone2.Logic.MenuAddOns;
+import com.teksystems.bootcamp.capstone2.Logic.EditOrder;
 import com.teksystems.bootcamp.capstone2.Order.Orders;
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package com.teksystems.bootcamp.capstone2.EditOrder;
+package com.teksystems.bootcamp.capstone2.Logic;
 
 import com.teksystems.bootcamp.capstone2.Order.Orders;
 import org.testng.Assert;

@@ -1,7 +1,7 @@
 package com.teksystems.bootcamp.capstone2.Display;
 
 import com.teksystems.bootcamp.capstone2.Order.Orders;
-import com.teksystems.bootcamp.capstone2.Utility.TaxCalculator;
+import com.teksystems.bootcamp.capstone2.Logic.TaxCalculator;
 
 public class Total implements Display {
     @Override

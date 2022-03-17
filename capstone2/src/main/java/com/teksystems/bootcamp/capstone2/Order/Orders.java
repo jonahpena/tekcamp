@@ -3,7 +3,7 @@ package com.teksystems.bootcamp.capstone2.Order;
 import com.teksystems.bootcamp.capstone2.Display.Items;
 import com.teksystems.bootcamp.capstone2.Display.Subtotal;
 import com.teksystems.bootcamp.capstone2.Display.Tax;
-import com.teksystems.bootcamp.capstone2.Menu.MenuAddOns;
+import com.teksystems.bootcamp.capstone2.Logic.MenuAddOns;
 import com.teksystems.bootcamp.capstone2.Display.Total;
 
 import java.util.ArrayList;

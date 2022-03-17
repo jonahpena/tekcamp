@@ -1,6 +1,6 @@
 package com.teksystems.bootcamp.capstone2.Display;
 
-import com.teksystems.bootcamp.capstone2.Menu.MenuAddOns;
+import com.teksystems.bootcamp.capstone2.Logic.MenuAddOns;
 import com.teksystems.bootcamp.capstone2.Order.Orders;
 
 import java.util.ArrayList;
