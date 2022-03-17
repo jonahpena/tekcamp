@@ -1,6 +1,7 @@
 package com.teksystems.bootcamp.capstone2.UserInterface;
 
 public class UserInterface {
+
     public static void printWelcome() {
         System.out.println("+-----------------------------------+");
         System.out.println("|         Welcome to Jonah's        |");
@@ -8,6 +9,7 @@ public class UserInterface {
         System.out.println("+-----------------------------------+");
         System.out.println("Welcome to the Poke Palace! \n\nPlease enter a number to select our menu options:");
     }
+
     public static void printEntreeMenu() {
         System.out.println("1. Aloha Special");
         System.out.println("2. Ono Special");
@@ -18,6 +20,7 @@ public class UserInterface {
         System.out.println("7. Choose a Side");
         System.out.println("0. Exit");
     }
+
     public static void printToppingMenu() {
         System.out.println("\nChoose any toppings you'd like to add:");
         System.out.println("1. Furikake");
@@ -30,6 +33,7 @@ public class UserInterface {
         System.out.println("8. Complete your Entree");
         System.out.println("0. Exit");
     }
+
     public static void printDrinkMenu() {
         System.out.println("\nChoose your drink of choice.");
         System.out.println("1. Sprite");
@@ -42,6 +46,7 @@ public class UserInterface {
         System.out.println("8. Complete your Order");
         System.out.println("0. Exit");
     }
+
     public static void printSideMenu() {
         System.out.println("\nChoose your sides:");
         System.out.println("1. Edamame");
@@ -57,16 +62,17 @@ public class UserInterface {
 
     public static void printComboMenu() {
         System.out.println("\nChoose a pre-defined Combo or build your own!");
-        System.out.println("1. Aloha Combo - \n Our Aloha Combo contains: The Aloha Special, with a side of Edamame, and a cup of Ice water ");
-        System.out.println("2. Ono Combo");
-        System.out.println("3. Ohana Combo");
-        System.out.println("4. Mahalo Combo");
+        System.out.println("1. Aloha Combo - \nOur Aloha Combo contains: The Aloha Special, with a side of Edamame, and a cup of Ice water");
+        System.out.println("2. Ono Combo - \nOur Ono Combo contains: The Ono Special, with two Crab balls, and a cup of Ice water");
+        System.out.println("3. Ohana Combo - \nOur Ohana Combo contains: The Ohana Special, with a side of Spam Musubi, and a cup of Ice water");
+        System.out.println("4. Mahalo Combo - \nOur Aloha Combo contains: The Mahalo Special, with a side of Nori, and a cup of Ice water");
         System.out.println("5. Go back to add more toppings");
         System.out.println("6. Go back to add another drink");
         System.out.println("7. Add another Entree");
         System.out.println("8. Complete your Order");
         System.out.println("0. Exit");
     }
+
     public static void additionalOrderOptionsMenu() {
         System.out.println("\nThank you for choosing The Poke Palace! Your receipt is displayed Above.");
         System.out.println("1. Enter 1 to Add an additional order");
