@@ -6,14 +6,9 @@ import com.teksystems.bootcamp.capstone2.Order.SaveOrder;
 import com.teksystems.bootcamp.capstone2.UserInterface.DisplayCurrentOrder;
 import com.teksystems.bootcamp.capstone2.UserInterface.UserInterface;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Menu {
     boolean exit;
-    static Orders currentOrder = new Orders();
-    static List<Orders> orderList = new ArrayList<>(Arrays.asList(currentOrder));
+    public static Orders currentOrder = new Orders();
 
     public void generateWelcome() {
         UserInterface.printWelcome();
@@ -319,7 +314,6 @@ public class Menu {
         }
     }
 
-
     public static void AdditionalOrderOptions(int choice) {
         boolean exit;
         switch (choice) {
@@ -331,25 +325,16 @@ public class Menu {
             case 1:
                 System.out.println("\nYou've chosen to add an additional order! \n\nUse the menu below to begin placing another order.");
                 UserInterface.printEntreeMenu();
-                SaveOrder.saveOrder(currentOrder, orderList);
+                SaveOrder.saveOrder(currentOrder, SaveOrder.getOrderList());
                 currentOrder.newOrder(currentOrder);
                 break;
             case 2:
                 System.out.println("\nYou've chosen to view previous orders! \n\nUse the menu below to begin placing another order.");
-                SaveOrder.saveOrder(currentOrder, orderList);
-                DisplayPreviousOrders.displayPreviousOrders(orderList);
+                SaveOrder.saveOrder(currentOrder, SaveOrder.getOrderList());
+                DisplayPreviousOrders.displayPreviousOrders(SaveOrder.getOrderList());
                 break;
 
         }
 
     }
-
-    public static List<Orders> getOrderList() {
-        return orderList;
-    }
-
-    public static void setOrderList(List<Orders> orderList) {
-        Menu.orderList = orderList;
-    }
-
 }
