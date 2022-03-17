@@ -1,11 +1,8 @@
-package com.teksystems.bootcamp.capstone2.EditOrder;
+package com.teksystems.bootcamp.capstone2.Order;
 
 import com.teksystems.bootcamp.capstone2.Items.MenuAddOns;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public abstract class EditOrder {
+public class EditOrder {
     public static void addToOrder(MenuAddOns item, Orders order){
         Double itemCost = item.getCost();
         order.addToEntrees(item, order);

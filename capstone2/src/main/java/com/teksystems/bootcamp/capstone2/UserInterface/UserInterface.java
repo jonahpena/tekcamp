@@ -56,6 +56,7 @@ public class UserInterface {
     public static void additionalOrderOptionsMenu() {
         System.out.println("\nThank you for choosing The Poke Palace! Your receipt is displayed Above.");
         System.out.println("1. Enter 1 to Add an additional order");
+        System.out.println("2. Enter 2 to View your previous orders");
         System.out.println("0. Enter 0 to Exit");
     }
 }

@@ -4,7 +4,7 @@ import com.teksystems.bootcamp.capstone2.Menu;
 
 import java.util.Scanner;
 
-public class Input {
+public class Inputs {
 
     public static int getEntreeInput() {
         Scanner scanner = new Scanner(System.in);

@@ -1,7 +1,5 @@
-package com.teksystems.bootcamp.capstone2.Recepit;
+package com.teksystems.bootcamp.capstone2.Order;
 
-import com.teksystems.bootcamp.capstone2.EditOrder.EditOrder;
-import com.teksystems.bootcamp.capstone2.EditOrder.Orders;
 import com.teksystems.bootcamp.capstone2.Items.MenuAddOns;
 import com.teksystems.bootcamp.capstone2.TaxCalculator;
 
