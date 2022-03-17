@@ -6,10 +6,10 @@ import com.teksystems.bootcamp.capstone2.Logic.TaxCalculator;
 public class Total implements Display {
     @Override
     public void generate(Orders order) {
-            double sum = order.getSum();
-            double taxedSum = TaxCalculator.calculateTax(sum);
-            double taxedTotal = sum + taxedSum;
-            double roundedSum = Math.round(taxedTotal*100.0)/100.0;
-            System.out.println("|  Total: $" + roundedSum + "              |");
+        double sum = order.getSum();
+        double taxedSum = TaxCalculator.calculateTax(sum);
+        double taxedTotal = sum + taxedSum;
+        double roundedSum = Math.round(taxedTotal * 100.0) / 100.0;
+        System.out.println("|  Total: $" + roundedSum + "              |");
     }
 }

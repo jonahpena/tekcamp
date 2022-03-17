@@ -1,7 +1,5 @@
 package com.teksystems.bootcamp.capstone2.Menu;
 
-import com.teksystems.bootcamp.capstone2.Menu.Menu;
-
 import java.util.Scanner;
 
 public class Inputs {

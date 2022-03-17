@@ -3,6 +3,9 @@ package com.teksystems.bootcamp.capstone2.UserInterface;
 public class UserInterface {
 
     public static void printWelcome() {
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
         System.out.println("+-----------------------------------+");
         System.out.println("|         Welcome to Jonah's        |");
         System.out.println("|            Poke Palace            |");
@@ -72,10 +75,14 @@ public class UserInterface {
 
     public static void printComboMenu() {
         System.out.println("\nChoose your combo meal of choice:");
-        System.out.println("\n1. Aloha Combo - \nThe Aloha Special, with a side of Edamame, and a cup of Ice water\n");
-        System.out.println("2. Ono Combo - \nThe Ono Special, with two Crab balls, and a cup of Ice water\n");
-        System.out.println("3. Ohana Combo - \nThe Ohana Special, with a side of Spam Musubi, and a cup of Ice water\n");
-        System.out.println("4. Mahalo Combo - \nThe Mahalo Special, with a side of Nori, and a cup of Ice water\n");
+        System.out.println("\n1. Aloha Combo ----------------$9.99");
+        System.out.println("   The Aloha Special, with a side of Edamame, and a cup of Ice water");
+        System.out.println("2. Ono Combo -----------------$9.99");
+        System.out.println("   The Ono Special, with two Crab balls, and a cup of Ice water");
+        System.out.println("3. Ohana Combo ------------------$9.99");
+        System.out.println("   The Ohana Special, with a side of Spam Musubi, and a cup of Ice water");
+        System.out.println("4. Mahalo Combo -------------------$9.99 ");
+        System.out.println("   The Mahalo Special, with a side of Nori, and a cup of Ice water");
         System.out.println(" ");
         System.out.println("5. Add more toppings");
         System.out.println("6. Add another drink");
