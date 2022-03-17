@@ -1,6 +1,6 @@
-package com.teksystems.bootcamp.capstone2.EditOrder;
+package com.teksystems.bootcamp.capstone2.Logic;
 
-import com.teksystems.bootcamp.capstone2.Utility.TaxCalculator;
+import com.teksystems.bootcamp.capstone2.Logic.TaxCalculator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

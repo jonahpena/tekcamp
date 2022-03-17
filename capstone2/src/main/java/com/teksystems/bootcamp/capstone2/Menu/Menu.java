@@ -1,6 +1,7 @@
 package com.teksystems.bootcamp.capstone2.Menu;
+import com.teksystems.bootcamp.capstone2.Logic.MenuAddOns;
 import com.teksystems.bootcamp.capstone2.UserInterface.DisplayPreviousOrders;
-import com.teksystems.bootcamp.capstone2.Order.EditOrder;
+import com.teksystems.bootcamp.capstone2.Logic.EditOrder;
 import com.teksystems.bootcamp.capstone2.Order.Orders;
 import com.teksystems.bootcamp.capstone2.Order.SaveOrder;
 import com.teksystems.bootcamp.capstone2.UserInterface.DisplayCurrentOrder;
@@ -128,9 +129,9 @@ public class Menu {
                 Inputs.getAdditionalOrderInput();
                 break;
             case 9:
-                currentOrder.printReceipt(currentOrder);
-                UserInterface.additionalOrderOptionsMenu();
-                Inputs.getAdditionalOrderInput();
+                UserInterface.printEntreeMenu();
+                Inputs.getEntreeInput();
+                DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 break;
         }
     }
@@ -260,23 +261,19 @@ public class Menu {
             case 1:
                 System.out.println("\nYou've chosen the Aloha Combo! \nUse the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.ALOHACOMBO, currentOrder);
-
                 EditOrder.addToOrder(MenuAddOns.EDAMAME, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
-
+                UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-//                UserInterface.printEntreeMenu();
-                Inputs.getComboInput();
-//                Inputs.getEntreeInput();
+                Inputs.getEntreeInput();
                 break;
             case 2:
                 System.out.println("\nYou've chosen the Ono Combo! \nUse the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.ONOCOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.CRABBALL, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
-
-                DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 UserInterface.printEntreeMenu();
+                DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 Inputs.getEntreeInput();
                 break;
             case 3:
@@ -284,9 +281,8 @@ public class Menu {
                 EditOrder.addToOrder(MenuAddOns.OHANACOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.SPAMMUSUBI, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
-
-                DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 UserInterface.printEntreeMenu();
+                DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 Inputs.getEntreeInput();
                 break;
             case 4:
@@ -294,9 +290,8 @@ public class Menu {
                 EditOrder.addToOrder(MenuAddOns.MAHALOCOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.NORI, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
-
-                DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 UserInterface.printEntreeMenu();
+                DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 Inputs.getEntreeInput();
                 break;
             case 5:
@@ -312,6 +307,7 @@ public class Menu {
             case 7:
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
+                Inputs.getEntreeInput();
                 break;
             case 8:
                 currentOrder.printReceipt(currentOrder);
@@ -327,7 +323,6 @@ public class Menu {
             case 0:
                 exit = true;
                 System.out.println("\nThank you for choosing The Poke Palace today! Have a great day.");
-
                 break;
             case 1:
                 System.out.println("\nYou've chosen to add an additional order! \n\nUse the menu below to begin placing another order.");
