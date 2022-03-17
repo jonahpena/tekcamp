@@ -144,9 +144,9 @@ public class Menu {
                 break;
             case 8:
                 Spacer.addSpacing();
-                UserInterface.printEntreeMenu();
+                UserInterface.printDrinkMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
+                Inputs.getDrinkInput();
                 break;
             case 9:
                 Spacer.addSpacing();
@@ -247,6 +247,7 @@ public class Menu {
                 Inputs.getSideInput();
                 break;
             case 3:
+                Spacer.addSpacing();
                 System.out.println("\nYou've added a side of Spam Musubi to your meal. \nUse the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.SPAMMUSUBI, currentOrder);
                 UserInterface.printSideMenu();
@@ -302,7 +303,6 @@ public class Menu {
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 2:
                 Spacer.addSpacing();
@@ -312,7 +312,6 @@ public class Menu {
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 3:
                 Spacer.addSpacing();
@@ -322,7 +321,6 @@ public class Menu {
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 4:
                 Spacer.addSpacing();
@@ -332,7 +330,6 @@ public class Menu {
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 5:
                 Spacer.addSpacing();
@@ -350,7 +347,6 @@ public class Menu {
                 Spacer.addSpacing();
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 8:
                 Spacer.addSpacing();

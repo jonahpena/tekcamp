@@ -10,7 +10,6 @@ public class Total implements Display {
             double taxedSum = TaxCalculator.calculateTax(sum);
             double taxedTotal = sum + taxedSum;
             double roundedSum = Math.round(taxedTotal*100.0)/100.0;
-
             System.out.println("|  Total: $" + roundedSum + "              |");
     }
 }

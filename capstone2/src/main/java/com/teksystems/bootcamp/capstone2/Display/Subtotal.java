@@ -9,6 +9,5 @@ public class Subtotal implements Display{
         double sum = order.getSum();
         double roundedSum = Math.round(sum*100.0)/100.0;
         System.out.println("|  Subtotal: $" + roundedSum + "           |");
-
     }
 }
