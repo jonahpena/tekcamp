@@ -26,10 +26,10 @@ public enum MenuAddOns {
     NORI("Nori ------------ $2.99    |", 2.99),
 
     //Combo Meal
-    ALOHACOMBO("Aloha Combo Meal", 9.99),
-    ONOCOMBO("Ono Combo Meal", 9.99),
-    OHANACOMBO("Ohana Combo Meal", 9.99),
-    MAHALOCOMBO("Mahalo Combo Meal", 9.99);
+    ALOHACOMBO("Aloha Combo Meal ----------- $9.99", 9.99),
+    ONOCOMBO("Ono Combo Meal ----------- $9.99", 9.99),
+    OHANACOMBO("Ohana Combo Meal ----------- $9.99", 9.99),
+    MAHALOCOMBO("Mahalo Combo Meal ----------- $9.99", 9.99);
 
     private double cost;
     private String name;

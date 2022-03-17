@@ -20,6 +20,7 @@ public class UserInterface {
         System.out.println("6. Choose Drink");
         System.out.println("7. Choose Side");
         System.out.println(" ");
+        System.out.println("8. Complete your order");
         System.out.println("0. Exit");
     }
 
@@ -35,12 +36,12 @@ public class UserInterface {
         System.out.println("7. Add another Entree");
         System.out.println("8. Complete Entree");
         System.out.println(" ");
-        System.out.println("8. Complete your Order");
+        System.out.println("9. Complete your Order");
         System.out.println("0. Exit");
     }
 
     public static void printDrinkMenu() {
-        System.out.println("\nChoose your drink of choice.");
+        System.out.println("\nChoose your drink of choice:");
         System.out.println("1. Sprite ---------------------- $1.99");
         System.out.println("2. Coke ------------------------ $1.99");
         System.out.println("3. Root-Beer ------------------- $1.99");
@@ -70,7 +71,7 @@ public class UserInterface {
     }
 
     public static void printComboMenu() {
-        System.out.println("\nChoose a pre-defined Combo or build your own!");
+        System.out.println("\nChoose your combo meal of choice:");
         System.out.println("\n1. Aloha Combo - \nThe Aloha Special, with a side of Edamame, and a cup of Ice water\n");
         System.out.println("2. Ono Combo - \nThe Ono Special, with two Crab balls, and a cup of Ice water\n");
         System.out.println("3. Ohana Combo - \nThe Ohana Special, with a side of Spam Musubi, and a cup of Ice water\n");
