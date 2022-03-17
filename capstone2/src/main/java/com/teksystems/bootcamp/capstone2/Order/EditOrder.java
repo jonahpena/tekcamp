@@ -1,6 +1,6 @@
 package com.teksystems.bootcamp.capstone2.Order;
 
-import com.teksystems.bootcamp.capstone2.MenuAddOns;
+import com.teksystems.bootcamp.capstone2.Menu.MenuAddOns;
 
 public class EditOrder {
     public static void addToOrder(MenuAddOns item, Orders order){

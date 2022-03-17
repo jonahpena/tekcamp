@@ -1,4 +1,4 @@
-package com.teksystems.bootcamp.capstone2;
+package com.teksystems.bootcamp.capstone2.Menu;
 import com.teksystems.bootcamp.capstone2.UserInterface.DisplayPreviousOrders;
 import com.teksystems.bootcamp.capstone2.Order.EditOrder;
 import com.teksystems.bootcamp.capstone2.Order.Orders;
@@ -31,6 +31,7 @@ public class Menu {
                 UserInterface.printToppingMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 Inputs.getToppingInput();
+
                 break;
             case 2:
                 System.out.println("\nYou've chosen the Ono Special for $12.99.");
@@ -122,6 +123,11 @@ public class Menu {
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 break;
             case 8:
+                currentOrder.printReceipt(currentOrder);
+                UserInterface.additionalOrderOptionsMenu();
+                Inputs.getAdditionalOrderInput();
+                break;
+            case 9:
                 currentOrder.printReceipt(currentOrder);
                 UserInterface.additionalOrderOptionsMenu();
                 Inputs.getAdditionalOrderInput();
@@ -253,7 +259,8 @@ public class Menu {
                 break;
             case 1:
                 System.out.println("\nYou've chosen the Aloha Combo! \nUse the menu below to continue with your order.");
-                EditOrder.addToOrder(MenuAddOns.ALOHA, currentOrder);
+                EditOrder.addToOrder(MenuAddOns.ALOHACOMBO, currentOrder);
+
                 EditOrder.addToOrder(MenuAddOns.EDAMAME, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
 
@@ -264,7 +271,7 @@ public class Menu {
                 break;
             case 2:
                 System.out.println("\nYou've chosen the Ono Combo! \nUse the menu below to continue with your order.");
-                EditOrder.addToOrder(MenuAddOns.ONO, currentOrder);
+                EditOrder.addToOrder(MenuAddOns.ONOCOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.CRABBALL, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
 
@@ -274,7 +281,7 @@ public class Menu {
                 break;
             case 3:
                 System.out.println("\nYou've chosen the Ohana Combo! \nUse the menu below to continue with your order.");
-                EditOrder.addToOrder(MenuAddOns.OHANA, currentOrder);
+                EditOrder.addToOrder(MenuAddOns.OHANACOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.SPAMMUSUBI, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
 
@@ -284,7 +291,7 @@ public class Menu {
                 break;
             case 4:
                 System.out.println("\nYou've chosen the Mahalo Combo! \nUse the menu below to continue with your order.");
-                EditOrder.addToOrder(MenuAddOns.MAHALO, currentOrder);
+                EditOrder.addToOrder(MenuAddOns.MAHALOCOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.NORI, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
 
