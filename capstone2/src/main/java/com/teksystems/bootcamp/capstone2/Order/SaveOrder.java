@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.teksystems.bootcamp.capstone2.Menu.currentOrder;
+import static com.teksystems.bootcamp.capstone2.Menu.Menu.currentOrder;
 
 public class SaveOrder {
 

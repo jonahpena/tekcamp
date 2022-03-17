@@ -1,4 +1,4 @@
-package com.teksystems.bootcamp.capstone2;
+package com.teksystems.bootcamp.capstone2.Menu;
 
 public enum MenuAddOns {
 //    //Entree
@@ -23,13 +23,13 @@ public enum MenuAddOns {
     EDAMAME("Edamame --------- $2.99    |", 2.99),
     CRABBALL("Crab Ball ------- $2.99    |", 2.99),
     SPAMMUSUBI("Spam Musubi ----- $2.99    |", 2.99),
-    NORI("Nori ------------ $2.99    |", 2.99);
+    NORI("Nori ------------ $2.99    |", 2.99),
 
     //Combo Meal
-//    ALOHACOMBO("Aloha Combo Meal", 16.99),
-//    ONOCOMBO("Ono Combo Meal", 16.99),
-//    OHANACOMBO("Ohana Combo Meal", 16.99),
-//    MAHALOCOMBO("Mahalo Combo Meal", 16.99);
+    ALOHACOMBO("Aloha Combo Meal", 9.99),
+    ONOCOMBO("Ono Combo Meal", 9.99),
+    OHANACOMBO("Ohana Combo Meal", 9.99),
+    MAHALOCOMBO("Mahalo Combo Meal", 9.99);
 
     private double cost;
     private String name;

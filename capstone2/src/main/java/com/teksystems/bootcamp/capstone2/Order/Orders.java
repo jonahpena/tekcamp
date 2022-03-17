@@ -1,6 +1,10 @@
 package com.teksystems.bootcamp.capstone2.Order;
 
-import com.teksystems.bootcamp.capstone2.MenuAddOns;
+import com.teksystems.bootcamp.capstone2.Display.Items;
+import com.teksystems.bootcamp.capstone2.Display.Subtotal;
+import com.teksystems.bootcamp.capstone2.Display.Tax;
+import com.teksystems.bootcamp.capstone2.Menu.MenuAddOns;
+import com.teksystems.bootcamp.capstone2.Display.Total;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,16 +32,20 @@ public class Orders {
     }
 
     public void printReceipt(Orders order) {
+        Total total = new Total();
+        Subtotal subtotal = new Subtotal();
+        Tax tax = new Tax();
+        Items items = new Items();
         System.out.println("\n+-----------------------------+");
         System.out.println("|     Jonah's Poke Palace     |");
         System.out.println("|          Order#:" + this.getOrderNumber() + "           |");
         System.out.println("|                             |");
-        ReceiptValues.displaySelectedMenuItemNames(this);
+        items.generate(this);
         System.out.println("|                             |");
-        ReceiptValues.displayCurrentSubtotalOfOrder(this);
+        subtotal.generate(this);
         System.out.println("|                             |");
-        ReceiptValues.displayTaxOfOrder(this);
-        ReceiptValues.displaySumOfOrder(this);
+        tax.generate(this);
+        total.generate(this);
         System.out.println("|                             |");
         System.out.println("+-----------------------------+");
     }
