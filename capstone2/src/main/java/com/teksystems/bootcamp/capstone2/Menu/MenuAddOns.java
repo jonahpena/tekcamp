@@ -1,7 +1,7 @@
 package com.teksystems.bootcamp.capstone2.Menu;
 
 public enum MenuAddOns {
-//    //Entree
+    //    //Entree
     ALOHA("Aloha ----------- $12.99   |", 12.99),
     ONO("Ono ------------- $12.99   |", 12.99),
     OHANA("Ohana  ---------- $12.99   |", 12.99),
@@ -26,10 +26,10 @@ public enum MenuAddOns {
     NORI("Nori ------------ $2.99    |", 2.99),
 
     //Combo Meal
-    ALOHACOMBO("Aloha Combo Meal", 9.99),
-    ONOCOMBO("Ono Combo Meal", 9.99),
-    OHANACOMBO("Ohana Combo Meal", 9.99),
-    MAHALOCOMBO("Mahalo Combo Meal", 9.99);
+    ALOHACOMBO("Aloha Combo", 9.99),
+    ONOCOMBO("Ono Combo", 9.99),
+    OHANACOMBO("Ohana Combo", 9.99),
+    MAHALOCOMBO("Mahalo Combo", 9.99);
 
     private double cost;
     private String name;
@@ -42,6 +42,7 @@ public enum MenuAddOns {
     public String getName() {
         return name;
     }
+
     public double getCost() {
         return cost;
     }

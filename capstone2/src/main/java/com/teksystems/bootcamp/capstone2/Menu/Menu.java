@@ -1,6 +1,7 @@
 package com.teksystems.bootcamp.capstone2.Menu;
+
 import com.teksystems.bootcamp.capstone2.Logic.MenuAddOns;
-import com.teksystems.bootcamp.capstone2.UserInterface.DisplayPreviousOrders;
+import com.teksystems.bootcamp.capstone2.UserInterface.OrderHistory;
 import com.teksystems.bootcamp.capstone2.Logic.EditOrder;
 import com.teksystems.bootcamp.capstone2.Order.Orders;
 import com.teksystems.bootcamp.capstone2.Order.SaveOrder;
@@ -9,7 +10,7 @@ import com.teksystems.bootcamp.capstone2.UserInterface.UserInterface;
 import com.teksystems.bootcamp.capstone2.Utility.Spacer;
 
 public class Menu {
-    boolean exit;
+    static boolean exit;
     public static Orders currentOrder = new Orders();
 
     public void generateWelcome() {
@@ -87,7 +88,6 @@ public class Menu {
     }
 
     public static void chooseTopping(int choice) {
-        boolean exit;
         switch (choice) {
             case 0:
                 exit = true;
@@ -144,9 +144,9 @@ public class Menu {
                 break;
             case 8:
                 Spacer.addSpacing();
-                UserInterface.printEntreeMenu();
+                UserInterface.printDrinkMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
+                Inputs.getDrinkInput();
                 break;
             case 9:
                 Spacer.addSpacing();
@@ -158,7 +158,6 @@ public class Menu {
     }
 
     public static void chooseDrink(int choice) {
-        boolean exit;
         switch (choice) {
             case 0:
                 exit = true;
@@ -224,7 +223,6 @@ public class Menu {
     }
 
     public static void chooseSide(int choice) {
-        boolean exit;
         switch (choice) {
             case 0:
                 exit = true;
@@ -232,7 +230,7 @@ public class Menu {
                 break;
             case 1:
                 Spacer.addSpacing();
-                System.out.println("\nYou've added a side of Edamame to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added a side of Edamame to your meal. Use the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.EDAMAME, currentOrder);
                 UserInterface.printSideMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
@@ -240,14 +238,15 @@ public class Menu {
                 break;
             case 2:
                 Spacer.addSpacing();
-                System.out.println("\nYou've added a Crab ball to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added a Crab ball to your meal. Use the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.CRABBALL, currentOrder);
                 UserInterface.printSideMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
                 Inputs.getSideInput();
                 break;
             case 3:
-                System.out.println("\nYou've added a side of Spam Musubi to your meal. \nUse the menu below to continue with your order.");
+                Spacer.addSpacing();
+                System.out.println("\nYou've added a side of Spam Musubi to your meal. Use the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.SPAMMUSUBI, currentOrder);
                 UserInterface.printSideMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
@@ -255,7 +254,7 @@ public class Menu {
                 break;
             case 4:
                 Spacer.addSpacing();
-                System.out.println("\nYou've added a side of Nori to your meal. \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've added a side of Nori to your meal. Use the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.NORI, currentOrder);
                 UserInterface.printSideMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
@@ -288,7 +287,6 @@ public class Menu {
     }
 
     public static void chooseCombo(int choice) {
-        boolean exit;
         switch (choice) {
             case 0:
                 exit = true;
@@ -296,43 +294,39 @@ public class Menu {
                 break;
             case 1:
                 Spacer.addSpacing();
-                System.out.println("\nYou've chosen the Aloha Combo! \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've chosen the Aloha Combo! Use the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.ALOHACOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.EDAMAME, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 2:
                 Spacer.addSpacing();
-                System.out.println("\nYou've chosen the Ono Combo! \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've chosen the Ono Combo! Use the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.ONOCOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.CRABBALL, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 3:
                 Spacer.addSpacing();
-                System.out.println("\nYou've chosen the Ohana Combo! \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've chosen the Ohana Combo! Use the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.OHANACOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.SPAMMUSUBI, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 4:
                 Spacer.addSpacing();
-                System.out.println("\nYou've chosen the Mahalo Combo! \nUse the menu below to continue with your order.");
+                System.out.println("\nYou've chosen the Mahalo Combo! Use the menu below to continue with your order.");
                 EditOrder.addToOrder(MenuAddOns.MAHALOCOMBO, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.NORI, currentOrder);
                 EditOrder.addToOrder(MenuAddOns.WATER, currentOrder);
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 5:
                 Spacer.addSpacing();
@@ -350,7 +344,6 @@ public class Menu {
                 Spacer.addSpacing();
                 UserInterface.printEntreeMenu();
                 DisplayCurrentOrder.displayCurrentOrder(currentOrder);
-                Inputs.getEntreeInput();
                 break;
             case 8:
                 Spacer.addSpacing();
@@ -362,7 +355,6 @@ public class Menu {
     }
 
     public static void AdditionalOrderOptions(int choice) {
-        boolean exit;
         switch (choice) {
             case 0:
                 exit = true;
@@ -379,7 +371,7 @@ public class Menu {
                 Spacer.addSpacing();
                 System.out.println("\nYou've chosen to view previous orders! \n\nUse the menu below to begin placing another order.");
                 SaveOrder.saveOrder(currentOrder, SaveOrder.getOrderList());
-                DisplayPreviousOrders.displayPreviousOrders(SaveOrder.getOrderList());
+                OrderHistory.displayPreviousOrders(SaveOrder.getOrderList());
                 break;
 
         }
