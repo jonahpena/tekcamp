@@ -1,13 +1,24 @@
 package facade;
 
 public class OrderFacade {
-
-    private OrderProcessor processor = new OrderProcessor();
+    private CheckStock checkStock = new CheckStock();
+    private PlaceOrder placeOrder = new PlaceOrder();
+    private ShipOrder shipOrder = new ShipOrder();
 
     public void processOrder(String name, int quantity) {
-        if(processor.checkStock(name)) {
-            String orderId = processor.placeOrder(name, quantity);
-            processor.shipOrder(orderId);
+        if((checkStock.checkStock(name))) {
+            String orderId = placeOrder.placeOrder(name, quantity);
+            shipOrder.shipOrder(orderId);
         }
     }
 }
+
+
+
+
+
+
+
+
+
+//    private OrderProcessor processor = new OrderProcessor();
