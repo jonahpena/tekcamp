@@ -6,7 +6,7 @@ public class BillingSystem {
         System.out.println("\nOrder complete. Find your bill below:");
         System.out.println("+---------------------------------------+");
         System.out.println("|  Item Purchased:                      |");
-        System.out.println("|  " + name + "                              |");
+        System.out.println("|  " + name + "                               |");
         System.out.println("|                                       |");
         System.out.println("|  Shipping Address:                    |");
         System.out.println("|  " + address + "   |");

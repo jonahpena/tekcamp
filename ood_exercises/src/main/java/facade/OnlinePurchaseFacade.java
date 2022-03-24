@@ -13,7 +13,7 @@ public class OnlinePurchaseFacade {
     private BillingSystem billingSystem = new BillingSystem();
 
     public void processOrder(String name, int quantity, String address) {
-        if((inventorySystem.checkStock(quantity))) {
+        if ((inventorySystem.checkStock(name, quantity))) {
             address = paymentSystem.placeOrder(name, address);
             shippingSystem.shipOrder(address);
             billingSystem.generateBill(name, address);
