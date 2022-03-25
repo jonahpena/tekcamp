@@ -1,9 +1,9 @@
 package facade;
 
-import facade.Systems.BillingSystem;
-import facade.Systems.InventorySystem;
-import facade.Systems.PaymentSystem;
-import facade.Systems.ShippingSystem;
+import facade.systems.BillingSystem;
+import facade.systems.InventorySystem;
+import facade.systems.PaymentSystem;
+import facade.systems.ShippingSystem;
 
 public class OnlinePurchaseFacade {
 
@@ -14,7 +14,7 @@ public class OnlinePurchaseFacade {
 
     public void processOrder(String name, int quantity, String address) {
         if ((inventorySystem.checkStock(name, quantity))) {
-            address = paymentSystem.placeOrder(name, address);
+            paymentSystem.placeOrder(name);
             shippingSystem.shipOrder(address);
             billingSystem.generateBill(name, address);
         }

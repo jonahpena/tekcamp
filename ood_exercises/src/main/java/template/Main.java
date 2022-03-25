@@ -1,7 +1,6 @@
 package template;
 
-import template.Derived.MadLib;
-import template.Derived.Original;
+import template.derived.MadLib;
 
 public class Main {
     public static void main(String[] args) {

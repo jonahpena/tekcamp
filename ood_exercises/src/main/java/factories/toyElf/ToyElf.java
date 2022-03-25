@@ -1,6 +1,6 @@
-package factories.ToyElf;
+package factories.toyElf;
 
-import factories.Utility.Elf;
+import factories.utility.Elf;
 
 public class ToyElf implements Elf {
     @Override

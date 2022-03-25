@@ -1,6 +1,6 @@
-package factories.CoalElf;
+package factories.coalElf;
 
-import factories.Utility.Elf;
+import factories.utility.Elf;
 
 public class CoalElf implements Elf {
     @Override

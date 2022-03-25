@@ -1,7 +1,7 @@
-package factories.CoalElf;
+package factories.coalElf;
 
-import factories.Utility.Elf;
-import factories.Utility.ElfAbstractFactory;
+import factories.utility.Elf;
+import factories.utility.ElfAbstractFactory;
 
 public class CoalElfFactory extends ElfAbstractFactory {
     @Override
