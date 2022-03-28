@@ -1,6 +1,6 @@
 package facade.systems;
 
-public class ShippingSystem implements SystemLogic{
+public class ShippingSystem implements SystemLogic {
     //address details are sent to shipping system
 
     @Override

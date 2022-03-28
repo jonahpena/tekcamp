@@ -7,7 +7,7 @@ public class ElfFactoryProducer {
     public static ElfAbstractFactory produce(String factoryType) {
         ElfAbstractFactory eaf = null;
 
-        if(factoryType.equals("nice")){
+        if (factoryType.equals("nice")) {
             eaf = new ToyElfFactory();
         } else if (factoryType.equals("naughty")) {
             eaf = new CoalElfFactory();

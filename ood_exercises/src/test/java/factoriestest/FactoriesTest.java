@@ -5,7 +5,7 @@ import factories.toyElf.ToyElf;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FactoriesTest  {
+public class FactoriesTest {
 
     ToyElf toyElf = new ToyElf();
     CoalElf coalElf = new CoalElf();
@@ -15,7 +15,7 @@ public class FactoriesTest  {
         String actual = toyElf.gift();
         String expected = "Child receives a toy";
 
-        Assert.assertEquals(actual,expected);
+        Assert.assertEquals(actual, expected);
     }
 
     @Test
@@ -23,6 +23,6 @@ public class FactoriesTest  {
         String actual = coalElf.gift();
         String expected = "Child receives a chunk of coal";
 
-        Assert.assertEquals(actual,expected);
+        Assert.assertEquals(actual, expected);
     }
 }
