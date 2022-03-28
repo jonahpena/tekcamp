@@ -19,6 +19,6 @@ public class Main {
             elf.gift();
             i++;
         }
-        System.out.println("\n\nThank you for using our gift determination software. Have a great day!");
+        System.out.println("\nThank you for using our gift determination software. Have a great day!");
     }
 }
