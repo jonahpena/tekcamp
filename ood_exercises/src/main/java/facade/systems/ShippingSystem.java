@@ -1,9 +1,10 @@
 package facade.systems;
 
-public class ShippingSystem {
+public class ShippingSystem implements SystemLogic{
     //address details are sent to shipping system
-    public String shipOrder(String address) {
 
-        return "Your order is being shipped to " + address;
+    @Override
+    public void printInfo(String input) {
+        System.out.println("Your order is being shipped to " + input);
     }
 }

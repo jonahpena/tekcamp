@@ -14,9 +14,11 @@ public class OnlinePurchaseFacade {
 
     public void processOrder(String name, int quantity, String address) {
         if ((inventorySystem.checkStock(name, quantity))) {
-            paymentSystem.placeOrder(name);
-            shippingSystem.shipOrder(address);
+            paymentSystem.printInfo(name);
+            shippingSystem.printInfo(address);
             billingSystem.generateBill(name, address);
+        } else {
+            System.out.println("The purchase has failed.");
         }
     }
 }

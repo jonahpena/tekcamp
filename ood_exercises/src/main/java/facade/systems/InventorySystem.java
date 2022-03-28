@@ -9,7 +9,7 @@ public class InventorySystem {
             return true;
         } else {
             //inform user purchase has failed
-            System.out.println("Item is not available. Purchase failed.");
+            System.out.println("Item is not available.");
         }
         return false;
     }

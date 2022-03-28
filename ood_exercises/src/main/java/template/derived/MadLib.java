@@ -17,10 +17,10 @@ public class MadLib extends Template {
     }
     @Override
     public String getDrink() {
-        return "Whiskey";
+        return "whiskey";
     }
     @Override
     public String getElement() {
-        return "Ice";
+        return "ice";
     }
 }
