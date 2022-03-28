@@ -17,7 +17,7 @@ public abstract class Template {
     public void tellMeAStoryMethod() {
         System.out.println("There once was a king named " + getFirstName() + " who did a good deed for a "+ getSecondName() + ". And he was then " +
                 "granted a wish by " + getThirdName() + ", the god of "+ getDrink() + ". " +
-                "For his wish, " + getFirstName() + " asked that whatever he touched would turn to " + getElement() + ". Despite "+ getThirdName() +"’ efforts to " +
+                "\nFor his wish, " + getFirstName() + " asked that whatever he touched would turn to " + getElement() + ". Despite "+ getThirdName() +"’ efforts to " +
                 "prevent it, " + getFirstName() + " pleaded that this was a fantastic wish, and so, it was bestowed.\n" +
                 "Excited about his newly-earned powers, " + getFirstName() + " started touching all kinds of things, turning each item" +
                 " into pure " + getElement() + ".\n" +

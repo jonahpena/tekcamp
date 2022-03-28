@@ -1,16 +1,24 @@
 package facadetest;
 
-import facade.systems.ShippingSystem;
+import facade.systems.InventorySystem;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FacadeTest {
 
-    ShippingSystem shippingSystem = new ShippingSystem();
+    private InventorySystem inventorySystem = new InventorySystem();
     @Test
-    public void shipOrderShouldReturnString() {
-        String actual = shippingSystem.shipOrder("P. Sherman, 42 Wallaby Way, Sydney");
-        String expected = "Your order is being shipped to P. Sherman, 42 Wallaby Way, Sydney";
+    public void inventorySystemShouldReturnTrue() {
+        boolean actual = inventorySystem.checkStock( "iPhone" , 2);
+        boolean expected = true;
+
+        Assert.assertEquals(actual,expected);
+    }
+
+    @Test
+    public void inventorySystemShouldReturnFalse() {
+        boolean actual = inventorySystem.checkStock( "iPhone" , 0);
+        boolean expected = false;
 
         Assert.assertEquals(actual,expected);
     }

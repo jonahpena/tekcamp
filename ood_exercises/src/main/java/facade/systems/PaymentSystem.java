@@ -1,9 +1,10 @@
 package facade.systems;
 
-public class PaymentSystem {
+public class PaymentSystem implements SystemLogic {
     //information is passed to the payment system
-    public void placeOrder(String name) {
-        System.out.println("Order for " + name + " has been placed");
 
+    @Override
+    public void printInfo(String input) {
+        System.out.println("Order for " + input + " has been placed");
     }
 }
