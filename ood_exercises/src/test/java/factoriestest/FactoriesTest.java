@@ -1,7 +1,6 @@
 package factoriestest;
 
 import factories.toyElf.ToyElf;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FactoriesTest  {
