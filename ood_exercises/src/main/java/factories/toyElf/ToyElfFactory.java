@@ -8,7 +8,7 @@ public class ToyElfFactory extends ElfAbstractFactory {
     public Elf createElf(String type) {
         Elf elf = null;
 
-        if (type.equals("nice")){
+        if (type.equals("nice")) {
             elf = new ToyElf();
         }
 

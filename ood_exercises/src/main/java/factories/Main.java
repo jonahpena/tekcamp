@@ -10,9 +10,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("You have a list of 3 children. Enter 'naughty' or 'nice' to determine the appropriate gift for each child on your list.");
+        System.out.println("You have a list of 3 children. Enter 'naughty' or 'nice' to determine the appropriate " +
+                "gift for each child on your list.");
         int i = 0;
-        while (i < 3){
+        while (i < 3) {
             String userInput = scanner.nextLine();
             ElfAbstractFactory eaf = ElfFactoryProducer.produce(userInput);
             Elf elf = eaf.createElf(userInput);
