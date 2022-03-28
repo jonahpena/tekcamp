@@ -4,7 +4,8 @@ import factories.utility.Elf;
 
 public class ToyElf implements Elf {
     @Override
-    public void gift() {
+    public String gift() {
         System.out.println("Child receives a toy");
+        return "Child receives a toy";
     }
 }
