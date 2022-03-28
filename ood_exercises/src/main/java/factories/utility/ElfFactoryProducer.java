@@ -1,7 +1,7 @@
-package factories.Utility;
+package factories.utility;
 
-import factories.ToyElf.ToyElfFactory;
-import factories.CoalElf.CoalElfFactory;
+import factories.toyElf.ToyElfFactory;
+import factories.coalElf.CoalElfFactory;
 
 public class ElfFactoryProducer {
     public static ElfAbstractFactory produce(String factoryType) {

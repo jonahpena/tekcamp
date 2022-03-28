@@ -1,26 +1,26 @@
-package template.Derived;
+package template.derived;
 
 import template.Template;
 
-public class MadLib extends Template {
+public class Original extends Template {
     @Override
     public String getFirstName() {
-        return "Jonah";
+        return "Midas";
     }
     @Override
     public String getSecondName() {
-        return "Kat";
+        return "Satyr";
     }
     @Override
     public String getThirdName() {
-        return "Tim";
+        return "Dionysus";
     }
     @Override
     public String getDrink() {
-        return "Whiskey";
+        return "wine";
     }
     @Override
     public String getElement() {
-        return "Ice";
+        return "gold";
     }
 }
