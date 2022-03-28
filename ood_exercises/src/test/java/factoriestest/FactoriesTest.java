@@ -9,7 +9,7 @@ public class FactoriesTest  {
     ToyElf toyElf = new ToyElf();
     @Test
     public void giftShouldReturnString() {
-//
+
 //        String actual = toyElf.gift();
 //        String expected = "Child receives a toy";
 //
