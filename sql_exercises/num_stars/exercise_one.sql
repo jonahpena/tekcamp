@@ -1,4 +1,6 @@
+USE sakila;
 SHOW TABLES;
+DROP TABLE IF EXISTS ratings;
 
 CREATE TABLE ratings
 (
