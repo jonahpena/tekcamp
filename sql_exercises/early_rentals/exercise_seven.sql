@@ -1,11 +1,11 @@
 SELECT 
-    rental_id,
-    staff_id,
-    inventory_id,
-    customer_id,
-    DATE(rental_date),
-    return_date,
-    last_update
+    rental_id AS "Rental ID",
+    staff_id AS "Staff ID",
+    inventory_id AS "Inventory ID",
+    customer_id AS "Customer ID",
+    DATE(rental_date) AS "Rental Date",
+    return_date AS "Return Date",
+    last_update AS "Last Update"
 FROM
     rental
 WHERE

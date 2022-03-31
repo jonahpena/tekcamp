@@ -1,5 +1,6 @@
 SELECT 
-    title, length
+    title AS "Movie",
+    length AS "Length in Minutes"
 FROM
     film
 WHERE

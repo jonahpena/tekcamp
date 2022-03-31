@@ -1,6 +1,7 @@
 SELECT 
-    store_id, film_id, COUNT(film_id) AS 'number of film copies'
+    store_id AS "Store ID",
+    film_id AS "Film ID",
+    COUNT(film_id) AS '# of Film Copies'
 FROM
     inventory
-GROUP BY film_id
-ORDER BY store_id;
+GROUP BY film_id, store_id;

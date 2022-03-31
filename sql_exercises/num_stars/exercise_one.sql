@@ -18,4 +18,7 @@ VALUES (0, "Worst movie ever"),
 (4, "Very Good"),
 (5, "Amazing");
 
-SELECT * FROM rating;
+SELECT rating_id AS "Rating ID",
+numberOfStars AS "# of Stars",
+starDescription AS "Description" 
+FROM rating;

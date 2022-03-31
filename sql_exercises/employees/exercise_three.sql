@@ -1,5 +1,5 @@
 SELECT 
-    CONCAT(last_name, ', ', first_name) AS employee_name
+    CONCAT(last_name, ', ', first_name) AS "Employee Name"
 FROM
     staff
 LIMIT 20;
