@@ -4,9 +4,10 @@ DROP TABLE IF EXISTS rating;
 
 CREATE TABLE rating
 (
+rating_id INT AUTO_INCREMENT PRIMARY KEY,
 numberOfStars INT, 
-starDescription varchar(100), 
-PRIMARY KEY (numberOfStars)
+starDescription varchar(100),
+UNIQUE (numberOfStars)
 );
 
 INSERT INTO rating(numberOfStars, starDescription)
