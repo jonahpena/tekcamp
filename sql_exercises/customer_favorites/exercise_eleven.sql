@@ -11,4 +11,4 @@ FROM
 WHERE
     CONCAT(last_name, ', ', first_name) LIKE '%P%'
 GROUP BY CONCAT(customer.last_name, ', ', customer.first_name)
-ORDER BY rental_date DESC;
+ORDER BY rental_date;

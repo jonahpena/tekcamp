@@ -1,14 +1,17 @@
 SELECT 
-    rental_id,
-    staff_id,
-    inventory_id,
-    customer_id,
-    DATE(rental_date),
+CONCAT(rental.customer_id, ', ', DAY(rental_date)) AS "ID + Date Rented",
+    rental.customer_id AS "Customer",
+    rental.rental_id,
+    rental.inventory_id,    
+    rental_date,
     return_date,
-    last_update
+    DAY(rental_date),
+    payment.payment_id,
+    payment.amount
 FROM
     rental
+INNER JOIN payment
+		ON rental.rental_id = payment.payment_id
 WHERE
     (HOUR(rental_date) < 10)
-ORDER BY rental_date DESC
-LIMIT 10;
+ORDER BY CONCAT(rental.customer_id, ', ', DAY(rental_date));
