@@ -3,10 +3,6 @@ CREATE TABLE customer_ratings (
     
     customer_rating INT,
 
-	fk_customer_id smallint unsigned,
-    FOREIGN KEY (fk_customer_id)
-        REFERENCES customer (customer_id),
-
 	fk_film_id smallint unsigned NOT NULL,
     FOREIGN KEY (fk_film_id)
         REFERENCES film (film_id),
@@ -21,10 +17,10 @@ VALUES  (1, 1, 5), (1, 2, 1), (1, 3, 4), (1, 4, 4), (1, 5, 5),
 (1, 1, 5), (1, 2, 1), (1, 3, 3), (1, 4, 2), (1, 5, 1),
 (1, 1, 4), (1, 2, 4), (1, 3, 5), (1, 4, 5), (1, 5, 4),
 (1, 1, 1), (1, 2, 3), (1, 3, 1), (1, 4, 3), (1, 5, 2),
-(1, 1, 3), (1, 2, 4), (1, 3, 4), (1, 4, 2), (1, 5, 5), (1, 5, 5), (1, 5, 5);
+(1, 1, 3), (1, 2, 4), (1, 3, 4), (1, 4, 2), (1, 5, 5), 
+(1, 5, 5), (1, 5, 5);
 
 SELECT 
-    film.film_id,
     film.title AS Movie,
     AVG(fk_rating_id) AS 'Average Rating',
     MIN(fk_rating_id) AS 'Lowest Rating',
