@@ -9,7 +9,6 @@ JOIN inventory on inventory.inventory_id = rental.inventory_id
 JOIN film on film.film_id = inventory.film_id
 JOIN film_category on film_category.film_id = film.film_id
 JOIN category on category.category_id = film_category.category_id
-JOIN customer on customer.customer_id = category.category_id
 GROUP BY customer_id, rental_date
 ORDER BY customer_id, rental_date)
 
@@ -25,4 +24,6 @@ customer_rentals.name
 FROM customer_rentals
 WHERE
 customer_rentals.rownum1 <=10 ) AS x) AS y
-WHERE rownum3 = 1;
+JOIN customer on customer.customer_id = y.customer_id
+WHERE rownum3 = 1
+AND first_name LIKE "%J%" AND last_name LIKE "%J%";

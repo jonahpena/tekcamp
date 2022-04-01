@@ -1,6 +1,5 @@
 SELECT 
-    staff.first_name AS "First Name", staff.last_name AS "Last Name",
-    city.city
+    staff.first_name AS "First Name", staff.last_name AS "Last Name"
 FROM
     (((staff
 INNER JOIN store ON store.store_id = staff.store_id)
