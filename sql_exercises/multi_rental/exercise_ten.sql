@@ -1,17 +1,11 @@
-SELECT 
-CONCAT(rental.customer_id, ', ', DAY(rental_date)) AS "ID + Date Rented",
-    rental.customer_id AS "Customer",
-    rental.rental_id,
-    rental.inventory_id,    
-    rental_date,
-    return_date,
-    DAY(rental_date),
-    payment.payment_id,
-    payment.amount
+SELECT rental.customer_id,
+    DATE(rental_date) AS "Rental Date",
+    COUNT(rental.rental_id) AS "Movies Rented",
+    SUM(payment.amount) AS "Total"
+    
 FROM
     rental
-INNER JOIN payment
-		ON rental.rental_id = payment.payment_id
-WHERE
-    (HOUR(rental_date) < 10)
-ORDER BY CONCAT(rental.customer_id, ', ', DAY(rental_date));
+JOIN payment ON payment.rental_id = rental.rental_id
+GROUP BY rental.customer_id, DATE(rental_date)
+HAVING COUNT(rental.rental_id) > 1
+ORDER BY rental.customer_id;

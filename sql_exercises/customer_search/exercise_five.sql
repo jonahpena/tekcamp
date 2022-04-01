@@ -3,4 +3,4 @@ SELECT
 FROM
     customer
 WHERE
-    CONCAT(last_name, ', ', first_name) LIKE '%P%';
+    CONCAT(last_name, ', ', first_name) LIKE '%J%';
