@@ -1,24 +1,25 @@
 package com.teksystems.bootcmap.springboot.movierental.model;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name = "user")
-@NoArgsConstructor
-@AllArgsConstructor
-public class User {
+@Table(name = "customers")
+//@NoArgsConstructor
+//@AllArgsConstructor
+public class Customer {
 
     @Id
+    private int id;
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    @Column(name = "user_id")
-    @Getter @Setter
-    private Long id;
+    @ManyToMany(mappedBy = "customers")
+    private List<Review> reviews;
+
 
     @Column(name = "first_name")
     @Getter @Setter
@@ -27,5 +28,6 @@ public class User {
     @Column(name = "last_name")
     @Getter @Setter
     private String lastName;
+
 
 }

@@ -1,7 +1,7 @@
 package com.teksystems.bootcmap.springboot.movierental.controller;
 
 
-import com.teksystems.bootcmap.springboot.movierental.model.Rating;
+
 import com.teksystems.bootcmap.springboot.movierental.model.Review;
 import com.teksystems.bootcmap.springboot.movierental.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;

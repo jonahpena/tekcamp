@@ -24,12 +24,9 @@ public class ReviewService {
     public Review updateReview(Integer reviewId, Review reviewDetails) {
         Review review = reviewRepository.findById(reviewId).get();
         review.setReviewOfFilm(reviewDetails.getReviewOfFilm());
-
         review.setNameOfCustomer(reviewDetails.getNameOfCustomer());
-
-        review.setNameOfActor(reviewDetails.getNameOfActor());
-
         review.setNameOfFilm(reviewDetails.getNameOfFilm());
+        review.setNumberOfStars(reviewDetails.getNumberOfStars());
 
         return reviewRepository.save(review);
     }

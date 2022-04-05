@@ -6,19 +6,20 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "review")
-@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor
+//@AllArgsConstructor
 public class Review {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    //Review
-    @Column(name = "review_id")
-    @Getter @Setter
+//    //Review
+//    @Column(name = "review_id")
+//    @Getter @Setter
     private int id;
 
     @Column(name = "Customer_Review")
@@ -27,9 +28,22 @@ public class Review {
 
 
     //Customer
-    @Column(name = "customer_id")
-    @Getter @Setter
-    private int customerId;
+    @ManyToMany
+    @JoinTable(
+            name = "customer_name",
+            joinColumns = @JoinColumn(name = "customer_id"),
+            inverseJoinColumns = @JoinColumn(name = "customers")
+    )
+    private List<Customer> customers;
+
+    @ManyToMany
+    @JoinTable(
+            name = "film_name",
+            joinColumns = @JoinColumn(name = "film_id"),
+            inverseJoinColumns = @JoinColumn(name = "film_id")
+    )
+    private List<Customer> film;
+
 
     @Column(name = "Customer_Name")
     @Getter @Setter
@@ -46,13 +60,13 @@ public class Review {
     private String nameOfFilm;
 
 
-    //Actor
-    @Column(name = "actor_id")
+    //Rating
+    @Column(name = "rating_id")
     @Getter @Setter
-    private int actorId;
+    private int ratingId;
 
-    @Column(name = "Actor_Name")
+    @Column(name = "numberOfStars")
     @Getter @Setter
-    private String nameOfActor;
+    private int numberOfStars;
 
 }
