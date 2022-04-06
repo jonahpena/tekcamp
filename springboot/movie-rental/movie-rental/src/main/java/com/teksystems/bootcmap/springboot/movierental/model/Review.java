@@ -1,72 +1,43 @@
 package com.teksystems.bootcmap.springboot.movierental.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
-import java.util.List;
 
+@Data
 @Entity
 @Table(name = "review")
-//@NoArgsConstructor
-//@AllArgsConstructor
 public class Review {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-//    //Review
-//    @Column(name = "review_id")
-//    @Getter @Setter
-    private int id;
-
-    @Column(name = "Customer_Review")
-    @Getter @Setter
-    private String reviewOfFilm;
+    @Column(name="review_id")
+    private short id;
 
 
-    //Customer
-    @ManyToMany
-    @JoinTable(
-            name = "customer_name",
-            joinColumns = @JoinColumn(name = "customer_id"),
-            inverseJoinColumns = @JoinColumn(name = "customers")
-    )
-    private List<Customer> customers;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
 
-    @ManyToMany
-    @JoinTable(
-            name = "film_name",
-            joinColumns = @JoinColumn(name = "film_id"),
-            inverseJoinColumns = @JoinColumn(name = "film_id")
-    )
-    private List<Customer> film;
+    short getCustomer_id() {
+        return customer.getId();
+    }
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "film_id")
+    private Film film;
 
-    @Column(name = "Customer_Name")
-    @Getter @Setter
-    private String nameOfCustomer;
+    short getFilm_id() {
+        return film.getId();
+    }
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "rating_id")
+    private Rating rating;
 
-    //Film
-    @Column(name = "film_id")
-    @Getter @Setter
-    private int filmId;
+    short getRating_id() {
+        return rating.getId();
+    }
 
-    @Column(name = "Movie_Title")
-    @Getter @Setter
-    private String nameOfFilm;
-
-
-    //Rating
-    @Column(name = "rating_id")
-    @Getter @Setter
-    private int ratingId;
-
-    @Column(name = "numberOfStars")
-    @Getter @Setter
-    private int numberOfStars;
 
 }

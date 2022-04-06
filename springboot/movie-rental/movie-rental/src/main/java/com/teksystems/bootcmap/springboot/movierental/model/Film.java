@@ -1,29 +1,18 @@
 package com.teksystems.bootcmap.springboot.movierental.model;
 
-
-import lombok.Getter;
-
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
-import java.util.List;
 
+@Data
 @Entity
 @Table(name = "film")
-
 public class Film {
 
     @Id
-    private int id;
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    @ManyToMany(mappedBy = "film")
-    private List<Review> reviews;
-
-
-    @Column(name = "title")
-    @Getter @Setter
-    private String filmTitle;
-
+    @Column(name = "film_id", columnDefinition="SMALLINT(3) UNSIGNED  default '40'")
+    private short id;
 
 }

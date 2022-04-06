@@ -22,9 +22,6 @@ public class RatingService {
 
     public Rating updateRating(Integer ratingId, Rating ratingDetails) {
         Rating rating = ratingRepository.findById(ratingId).get();
-        rating.setNumberOfStars(ratingDetails.getNumberOfStars());
-        rating.setStarDescription(ratingDetails.getStarDescription());
-
         return ratingRepository.save(rating);
     }
 
