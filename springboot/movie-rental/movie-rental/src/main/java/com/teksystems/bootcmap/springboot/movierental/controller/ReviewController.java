@@ -16,23 +16,17 @@ public class ReviewController {
     @Autowired
     private ReviewService reviewService;
 
-    @GetMapping("/")
+    @GetMapping("/getAllReviews")
     public List<Review> getReview() {
         return reviewService.getReview();
     }
 
-    @PostMapping("/")
+    @PostMapping("/createReview")
     public Review createReview(@RequestBody Review review) {
         return reviewService.createReview(review);
     }
 
-    @PutMapping("/{id}")
-    public Review updateReview(@PathVariable(value = "id") Integer reviewId,
-                               @RequestBody Review reviewDetails) {
-        return reviewService.updateReview(reviewId, reviewDetails);
-    }
-
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public void deleteReview(@PathVariable(value = "id") Integer reviewId) {
         reviewService.deleteReview(reviewId);
     }
