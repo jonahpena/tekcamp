@@ -12,12 +12,12 @@ public class Review {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "review_id")
+    @Column(name = "review_id", nullable = false)
     @Getter @Setter
     private short id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer = new Customer();
 
     public short getCustomer() {
@@ -28,7 +28,7 @@ public class Review {
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "film_id")
+    @JoinColumn(name = "film_id", nullable = false)
     private Film film = new Film();
 
     public short getFilm() {
@@ -39,7 +39,7 @@ public class Review {
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "rating_id")
+    @JoinColumn(name = "rating_id", nullable = false)
     private Rating rating = new Rating();
 
     public short getRating() {
