@@ -1,13 +1,12 @@
 package com.teksystems.bootcmap.springboot.movierental.model;
 
 
-import lombok.Data;
+
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 
-@Data
 @Entity
 @Table(name = "rating")
 public class Rating {
@@ -16,14 +15,15 @@ public class Rating {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    @Column(name = "rating_id", columnDefinition="SMALLINT() UNSIGNED ")
     @Column(name = "rating_id")
-    private short id;
+    @Getter @Setter
+    private short ratingId;
 
 
-    @Column(name = "numberOfStars")
+    @Column(name = "number_of_stars")
     @Getter @Setter
     private int numberOfStars;
 
-    @Column(name = "starDescription")
+    @Column(name = "star_description")
     @Getter @Setter
     private String starDescription;
 

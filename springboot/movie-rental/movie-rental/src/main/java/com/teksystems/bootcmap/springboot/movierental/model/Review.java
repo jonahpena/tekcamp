@@ -1,43 +1,52 @@
 package com.teksystems.bootcmap.springboot.movierental.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
-@Data
+
 @Entity
 @Table(name = "review")
 public class Review {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="review_id")
+    @Column(name = "review_id")
+    @Getter @Setter
     private short id;
 
-
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id")
-    private Customer customer;
+    private Customer customer = new Customer();
 
-    short getCustomer_id() {
-        return customer.getId();
+    public short getCustomer() {
+        return customer.getCustomerId();
+    }
+    public void setCustomer(Short customerId) {
+        this.customer.setCustomerId(customerId);
     }
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "film_id")
-    private Film film;
+    private Film film = new Film();
 
-    short getFilm_id() {
-        return film.getId();
+    public short getFilm() {
+        return film.getFilmId();
+    }
+    public void setFilm(Short filmId) {
+        this.film.setFilmId(filmId);
     }
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "rating_id")
-    private Rating rating;
+    private Rating rating = new Rating();
 
-    short getRating_id() {
-        return rating.getId();
+    public short getRating() {
+        return rating.getRatingId();
     }
+    public void setRating(Short ratingId) {
+        this.rating.setRatingId(ratingId);
 
-
+    }
 }
