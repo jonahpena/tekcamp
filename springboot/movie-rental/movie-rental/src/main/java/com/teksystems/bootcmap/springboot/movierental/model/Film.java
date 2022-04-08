@@ -13,7 +13,8 @@ import javax.persistence.*;
 public class Film {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "film_id", columnDefinition="SMALLINT(3) UNSIGNED  default '40'", nullable = false)
-    @Getter @Setter
+    @Column(name = "film_id", columnDefinition = "SMALLINT(3) UNSIGNED  default '40'", nullable = false)
+    @Getter
+    @Setter
     private short filmId;
 }

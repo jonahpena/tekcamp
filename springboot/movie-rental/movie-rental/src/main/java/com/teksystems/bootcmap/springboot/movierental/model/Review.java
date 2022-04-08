@@ -13,7 +13,8 @@ public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "review_id", nullable = false)
-    @Getter @Setter
+    @Getter
+    @Setter
     private short reviewId;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -23,6 +24,7 @@ public class Review {
     public short getCustomer() {
         return customer.getCustomerId();
     }
+
     public void setCustomer(Short customerId) {
         this.customer.setCustomerId(customerId);
     }
@@ -34,6 +36,7 @@ public class Review {
     public short getFilm() {
         return film.getFilmId();
     }
+
     public void setFilm(Short filmId) {
         this.film.setFilmId(filmId);
     }
@@ -45,6 +48,7 @@ public class Review {
     public short getRating() {
         return rating.getRatingId();
     }
+
     public void setRating(Short ratingId) {
         this.rating.setRatingId(ratingId);
 

@@ -1,7 +1,6 @@
 package com.teksystems.bootcmap.springboot.movierental.controller;
 
 
-
 import com.teksystems.bootcmap.springboot.movierental.model.Review;
 import com.teksystems.bootcmap.springboot.movierental.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,14 +18,15 @@ public class ReviewController {
     private ReviewService reviewService;
 
     @GetMapping("/get/{review_id}")
-    private Review getReviewById (@PathVariable("review_id") short reviewId) {
+    private Review getReviewById(@PathVariable("review_id") short reviewId) {
         return reviewService.getReviewById(reviewId);
     }
+
     @GetMapping("/getAllReviews")
     public ResponseEntity<List<Review>> getAllReviews(
-            @RequestParam(defaultValue = "0")Integer pageNum,
-            @RequestParam(defaultValue = "10")Integer pageSize,
-            @RequestParam(defaultValue = "reviewId")String sortBy){
+            @RequestParam(defaultValue = "0") Integer pageNum,
+            @RequestParam(defaultValue = "10") Integer pageSize,
+            @RequestParam(defaultValue = "reviewId") String sortBy) {
         List<Review> reviews = reviewService.getAllReviews(pageNum, pageSize, sortBy);
         return new ResponseEntity<List<Review>>(reviews, HttpStatus.OK);
     }
