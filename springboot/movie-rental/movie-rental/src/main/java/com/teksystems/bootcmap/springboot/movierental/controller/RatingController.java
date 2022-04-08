@@ -18,16 +18,16 @@ public class RatingController {
     private RatingService ratingService;
 
     @GetMapping("/get/{rating_id}")
-    private Rating getRatingById (@PathVariable("rating_id") short ratingId) {
+    private Rating getRatingById(@PathVariable("rating_id") short ratingId) {
 
         return ratingService.getRatingById(ratingId);
     }
 
     @GetMapping("/getAllRatings")
     public ResponseEntity<List<Rating>> getAllRatings(
-            @RequestParam(defaultValue = "0")Integer pageNum,
-            @RequestParam(defaultValue = "10")Integer pageSize,
-            @RequestParam(defaultValue = "ratingId")String sortBy){
+            @RequestParam(defaultValue = "0") Integer pageNum,
+            @RequestParam(defaultValue = "10") Integer pageSize,
+            @RequestParam(defaultValue = "ratingId") String sortBy) {
         List<Rating> ratings = ratingService.getAllRatings(pageNum, pageSize, sortBy);
         return new ResponseEntity<List<Rating>>(ratings, HttpStatus.OK);
     }
@@ -39,7 +39,7 @@ public class RatingController {
 
     @PutMapping("/update/{rating_id}")
     public Rating updateRating(@PathVariable(value = "id") Short ratingId,
-                           @RequestBody Rating ratingDetails) {
+                               @RequestBody Rating ratingDetails) {
         return ratingService.updateRating(ratingId, ratingDetails);
     }
 

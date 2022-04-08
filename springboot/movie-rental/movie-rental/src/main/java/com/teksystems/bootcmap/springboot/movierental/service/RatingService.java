@@ -26,9 +26,9 @@ public class RatingService {
     public List<Rating> getAllRatings(int pageNum, int pageSize, String sortBy) {
         Pageable page = PageRequest.of(pageNum, pageSize, Sort.by(sortBy));
         Page<Rating> pagedRating = ratingRepository.findAll(page);
-        if (pagedRating.hasContent()){
+        if (pagedRating.hasContent()) {
             return pagedRating.getContent();
-        }else{
+        } else {
             return new ArrayList<Rating>();
         }
     }
