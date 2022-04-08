@@ -1,9 +1,10 @@
 package com.teksystems.bootcmap.springboot.movierental.repository;
 
 import com.teksystems.bootcmap.springboot.movierental.model.Review;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.stereotype.Repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ReviewRepository extends JpaRepository<Review, Integer> {
+@Repository
+public interface ReviewRepository extends PagingAndSortingRepository<Review, Short> {
 
 }
